@@ -1,6 +1,6 @@
-# Getting Started with Create React App
+# Kevin's personal website
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is a portfolio on my projects and shows information about me.
 
 ## Available Scripts
 
