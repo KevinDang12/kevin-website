@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/kevin-website/static/css/main.04179b6f.css",
+    "main.js": "/kevin-website/static/js/main.bb724bab.js",
+    "static/js/787.152a7e57.chunk.js": "/kevin-website/static/js/787.152a7e57.chunk.js",
+    "static/media/Education.jpg": "/kevin-website/static/media/Education.26055749edea0e559226.jpg",
+    "static/media/volunteer.jpg": "/kevin-website/static/media/volunteer.6460dcc288c2048cd161.jpg",
+    "static/media/Contact.jpg": "/kevin-website/static/media/Contact.ce97ebe3d5cf291b8c23.jpg",
+    "static/media/About.jpg": "/kevin-website/static/media/About.88f5ac23c59fb2a5df45.jpg",
+    "static/media/background.jpg": "/kevin-website/static/media/background.66f8317dc3253b5e3dc8.jpg",
+    "static/media/Minesweeper.jpg": "/kevin-website/static/media/Minesweeper.4fc9d9918c0ee07d27ee.jpg",
+    "static/media/Notepad.jpg": "/kevin-website/static/media/Notepad.6604e74c410eb31d2d63.jpg",
+    "static/media/React.png": "/kevin-website/static/media/React.72ee669783b12b7e60e7.png",
+    "static/media/C.png": "/kevin-website/static/media/C.c10ec3e35f644cef45dc.png",
+    "static/media/SQL.png": "/kevin-website/static/media/SQL.b10b3beeec4a37ad43a2.png",
+    "static/media/C++.png": "/kevin-website/static/media/C++.ab01385b29c94f3578b0.png",
+    "static/media/Python.png": "/kevin-website/static/media/Python.02408aadaec3cc6d58a4.png",
+    "index.html": "/kevin-website/index.html",
+    "main.04179b6f.css.map": "/kevin-website/static/css/main.04179b6f.css.map",
+    "main.bb724bab.js.map": "/kevin-website/static/js/main.bb724bab.js.map",
+    "787.152a7e57.chunk.js.map": "/kevin-website/static/js/787.152a7e57.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.04179b6f.css",
+    "static/js/main.bb724bab.js"
+  ]
+}
