@@ -310,10 +310,10 @@ class App extends Component {
                         <h1>Projects</h1>
 
                         <Carousel variant="dark" height={700}>
-                            <Carousel.Item>
+                            <Carousel.Item interval={2000}>
                                 <img src={notepad}/>
                                 <Carousel.Caption>
-                                    <h2>Notepad</h2>
+                                    <h2>Project #1: Notepad</h2>
                                     <p>
                                         An Android notepad app for Android devices.
                                         The notepad allows you to create and store multiple
@@ -326,10 +326,10 @@ class App extends Component {
                                 </Carousel.Caption>
                             </Carousel.Item>
 
-                            <Carousel.Item>
+                            <Carousel.Item interval={2000}>
                                 <img src={minesweeper}/>
                                 <Carousel.Caption>
-                                    <h2>Minesweeper</h2>
+                                    <h2>Project #2: Minesweeper</h2>
                                     <p>
                                         A simple minesweeper game made using JavaFX.
                                         The rules are the same as minesweeper,
