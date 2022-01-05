@@ -87,7 +87,7 @@ const styles = {
         zIndex: 1,
         width: '100%',
         maxWidth: '100%',
-        height: '100vh'
+        minHeight: '100vh'
     },
 
     project: {
@@ -199,6 +199,7 @@ const styles = {
     },
 
     skillsRow: {
+        width: '100%',
 
     },
 
@@ -210,9 +211,12 @@ const styles = {
 
     cardRow: {
         display: 'flex',
+        flexFlow: 'row wrap',
+        flexDirection: 'row',
         flexWrap: 'wrap',
         alignItems: 'center',
         justifyContent: 'center',
+        width: '100%',
     },
 
     dividerWhite: {
@@ -244,7 +248,7 @@ const styles = {
         color: 'black',
         backgroundColor: 'white',
         width: '100%',
-        height: '50vh'
+        minHeight: '50vh'
     },
 
     educationSectionSmall: {
@@ -259,7 +263,7 @@ const styles = {
         backgroundColor: '#f2f7fb',
         zIndex: 1,
         width: '100%',
-        height: '50vh'
+        minHeight: '50vh'
     },
 
     volunteerSectionSmall: {
@@ -275,7 +279,7 @@ const styles = {
         backgroundColor: 'white',
         zIndex: 1,
         width: '100%',
-        height: '50vh',
+        minHeight: '50vh',
     },
 
     contactSectionSmall: {
@@ -290,8 +294,16 @@ const styles = {
         backgroundColor: '#d2beff',
         zIndex: 1,
         width: '100%',
-        height: '50vh'
-    }
+        minHeight: '50vh'
+    },
+
+    smallSkillImage: {
+        width: '100px',
+        height: '100px',
+        alignItems: 'center',
+        justifyContent: 'center',
+        objectFit: 'cover',
+    },
 }
 
 class App extends Component {
@@ -346,49 +358,92 @@ class App extends Component {
 
                 {/* Skills */}
                 <div>
-                    <div style={styles.skillSection}>
-                        <h1>My Skills</h1>
-                        <div style={styles.skillsRow}>
-                            <CardGroup style={styles.cardRow}>
+                    <MediaQuery minWidth={800}>
+                        <div style={styles.skillSection}>
+                            <h1>My Skills</h1>
+                            <div>
+                                <CardGroup style={styles.cardRow}>
+                                    <Card style={styles.skillsCard}>
+                                        <Card.Img src={javaImg}/>
+                                        <Card.Text>Java</Card.Text>
+                                    </Card>
+                                    <Card style={styles.skillsCard}>
+                                        <Card.Img src={androidImg}/>
+                                        <Card.Text>Android</Card.Text>
+                                    </Card>
+                                    <Card style={styles.skillsCard}>
+                                        <Card.Img src={cImg}/>
+                                        <Card.Text>C</Card.Text>
+                                    </Card>
+                                    <Card style={styles.skillsCard}>
+                                        <Card.Img src={cppImg}/>
+                                        <Card.Text>C++</Card.Text>
+                                    </Card>
+                                </CardGroup>
+                            </div>
+
+                            <div>
+                                <CardGroup style={styles.cardRow}>
+                                    <Card style={styles.skillsCard}>
+                                        <Card.Img src={pythonImg}/>
+                                        <Card.Text>Python</Card.Text>
+                                    </Card>
+                                    <Card style={styles.skillsCard}>
+                                        <Card.Img src={sqlImg}/>
+                                        <Card.Text>SQL</Card.Text>
+                                    </Card>
+                                    <Card style={styles.skillsCard}>
+                                        <Card.Img src={javascriptImg}/>
+                                        <Card.Text>JavaScript</Card.Text>
+                                    </Card>
+                                    <Card style={styles.skillsCard}>
+                                        <Card.Img src={reactImg}/>
+                                        <Card.Text>React</Card.Text>
+                                    </Card>
+                                </CardGroup>
+                            </div>
+                        </div>
+                    </MediaQuery>
+
+                    <MediaQuery maxWidth={800}>
+                        <div style={styles.skillSection}>
+                            <h1>My Skills</h1>
+                            <div style={styles.cardRow}>
                                 <Card style={styles.skillsCard}>
-                                    <Card.Img src={javaImg}/>
+                                    <Card.Img src={javaImg} style={styles.smallSkillImage}/>
                                     <Card.Text>Java</Card.Text>
                                 </Card>
                                 <Card style={styles.skillsCard}>
-                                    <Card.Img src={androidImg}/>
+                                    <Card.Img src={androidImg} style={styles.smallSkillImage}/>
                                     <Card.Text>Android</Card.Text>
                                 </Card>
                                 <Card style={styles.skillsCard}>
-                                    <Card.Img src={cImg}/>
+                                    <Card.Img src={cImg} style={styles.smallSkillImage}/>
                                     <Card.Text>C</Card.Text>
                                 </Card>
                                 <Card style={styles.skillsCard}>
-                                    <Card.Img src={cppImg}/>
+                                    <Card.Img src={cppImg} style={styles.smallSkillImage}/>
                                     <Card.Text>C++</Card.Text>
                                 </Card>
-                            </CardGroup>
-                        </div>
-                        <div style={styles.skillsRow}>
-                            <CardGroup style={styles.cardRow}>
                                 <Card style={styles.skillsCard}>
-                                    <Card.Img src={pythonImg}/>
+                                    <Card.Img src={pythonImg} style={styles.smallSkillImage}/>
                                     <Card.Text>Python</Card.Text>
                                 </Card>
                                 <Card style={styles.skillsCard}>
-                                    <Card.Img src={sqlImg}/>
+                                    <Card.Img src={sqlImg} style={styles.smallSkillImage}/>
                                     <Card.Text>SQL</Card.Text>
                                 </Card>
                                 <Card style={styles.skillsCard}>
-                                    <Card.Img src={javascriptImg}/>
+                                    <Card.Img src={javascriptImg} style={styles.smallSkillImage}/>
                                     <Card.Text>JavaScript</Card.Text>
                                 </Card>
                                 <Card style={styles.skillsCard}>
-                                    <Card.Img src={reactImg}/>
+                                    <Card.Img src={reactImg} style={styles.smallSkillImage}/>
                                     <Card.Text>React</Card.Text>
                                 </Card>
-                            </CardGroup>
+                            </div>
                         </div>
-                    </div>
+                    </MediaQuery>
                 </div>
 
                 {/* Projects */}
