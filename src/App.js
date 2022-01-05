@@ -19,7 +19,9 @@ import resume from './Resume.pdf';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Carousel from 'react-bootstrap/Carousel';
 import Card from 'react-bootstrap/Card';
+import CardGroup from 'react-bootstrap/CardGroup'
 import { Parallax } from 'react-parallax';
+import MediaQuery from 'react-responsive'
 
 const styles = {
     background: {
@@ -197,14 +199,20 @@ const styles = {
     },
 
     skillsRow: {
-        flexDirection: 'row',
-        display: 'flex'
+
     },
 
     skillsCard: {
-        margin: '20px',
+        margin: '10px',
         padding: '20px',
         objectFit: 'cover',
+    },
+
+    cardRow: {
+        display: 'flex',
+        flexWrap: 'wrap',
+        alignItems: 'center',
+        justifyContent: 'center',
     },
 
     dividerWhite: {
@@ -223,6 +231,67 @@ const styles = {
         backgroundColor: '#d2beff',
         height: '50px'
     },
+
+    aboutSectionSmall: {
+        margin: '0px',
+        paddingLeft: '50px',
+        paddingRight: '50px',
+        textAlign: 'center',
+        flexDirection: 'column',
+        display: 'flex',
+        alignItems: 'center',
+        justifyContent: 'center',
+        color: 'black',
+        backgroundColor: 'white',
+        width: '100%',
+        height: '50vh'
+    },
+
+    educationSectionSmall: {
+        margin: '0px',
+        padding: '0px',
+        textAlign: 'center',
+        flexDirection: 'column',
+        display: 'flex',
+        alignItems: 'center',
+        justifyContent: 'center',
+        color: 'black',
+        backgroundColor: '#f2f7fb',
+        zIndex: 1,
+        width: '100%',
+        height: '50vh'
+    },
+
+    volunteerSectionSmall: {
+        margin: '0px',
+        paddingLeft: '10px',
+        paddingRight: '10px',
+        textAlign: 'center',
+        flexDirection: 'column',
+        display: 'flex',
+        alignItems: 'center',
+        justifyContent: 'center',
+        color: 'black',
+        backgroundColor: 'white',
+        zIndex: 1,
+        width: '100%',
+        height: '50vh',
+    },
+
+    contactSectionSmall: {
+        margin: '0px',
+        padding: '0px',
+        textAlign: 'center',
+        flexDirection: 'column',
+        display: 'flex',
+        alignItems: 'center',
+        justifyContent: 'center',
+        color: 'black',
+        backgroundColor: '#d2beff',
+        zIndex: 1,
+        width: '100%',
+        height: '50vh'
+    }
 }
 
 class App extends Component {
@@ -244,19 +313,33 @@ class App extends Component {
 
                 {/* About */}
                 <div>
-                    <div style={styles.aboutSection}>
-                        <h1>A brief summary about me</h1>
-                        <h5>
-                            My name is Kevin Dang, I am currently
-                            a second-year Computer Engineering
-                            student. I have had an interest in working
-                            with computers and it has led me
-                            to have a passion for programming.
-                        </h5>
-                    </div>
-                    <Parallax blur={{min: -5, max: 5}} bgImage={about} strength={200}>
-                        <div style={styles.about}/>
-                    </Parallax>
+                    <MediaQuery minWidth={800}>
+                        <div style={styles.aboutSection}>
+                            <h1>A Brief Summary about Me</h1>
+                            <h5>
+                                My name is Kevin Dang, I am currently
+                                a second-year Computer Engineering
+                                student. I have had an interest in working
+                                with computers and it has led me
+                                to have a passion for programming.
+                            </h5>
+                        </div>
+                        <Parallax blur={{min: -5, max: 5}} bgImage={about} strength={200}>
+                            <div style={styles.about}/>
+                        </Parallax>
+                    </MediaQuery>
+                    <MediaQuery maxWidth={800}>
+                        <div style={styles.aboutSectionSmall}>
+                            <h1>A Brief Summary about Me</h1>
+                            <h5>
+                                My name is Kevin Dang, I am currently
+                                a second-year Computer Engineering
+                                student. I have had an interest in working
+                                with computers and it has led me
+                                to have a passion for programming.
+                            </h5>
+                        </div>
+                    </MediaQuery>
                 </div>
 
                 <div style={styles.dividerWhite}/>
@@ -266,107 +349,130 @@ class App extends Component {
                     <div style={styles.skillSection}>
                         <h1>My Skills</h1>
                         <div style={styles.skillsRow}>
-                            <Card style={styles.skillsCard}>
-                                <Card.Img src={javaImg}/>
-                                <Card.Title>Java</Card.Title>
-                            </Card>
-                            <Card style={styles.skillsCard}>
-                                <Card.Img src={androidImg}/>
-                                <Card.Title>Android</Card.Title>
-                            </Card>
-                            <Card style={styles.skillsCard}>
-                                <Card.Img src={cImg}/>
-                                <Card.Title>C</Card.Title>
-                            </Card>
-                            <Card style={styles.skillsCard}>
-                                <Card.Img src={cppImg}/>
-                                <Card.Title>C++</Card.Title>
-                            </Card>
+                            <CardGroup style={styles.cardRow}>
+                                <Card style={styles.skillsCard}>
+                                    <Card.Img src={javaImg}/>
+                                    <Card.Text>Java</Card.Text>
+                                </Card>
+                                <Card style={styles.skillsCard}>
+                                    <Card.Img src={androidImg}/>
+                                    <Card.Text>Android</Card.Text>
+                                </Card>
+                                <Card style={styles.skillsCard}>
+                                    <Card.Img src={cImg}/>
+                                    <Card.Text>C</Card.Text>
+                                </Card>
+                                <Card style={styles.skillsCard}>
+                                    <Card.Img src={cppImg}/>
+                                    <Card.Text>C++</Card.Text>
+                                </Card>
+                            </CardGroup>
                         </div>
                         <div style={styles.skillsRow}>
-                            <Card style={styles.skillsCard}>
-                                <Card.Img src={pythonImg}/>
-                                <Card.Title>Python</Card.Title>
-                            </Card>
-                            <Card style={styles.skillsCard}>
-                                <Card.Img src={sqlImg}/>
-                                <Card.Title>SQL</Card.Title>
-                            </Card>
-                            <Card style={styles.skillsCard}>
-                                <Card.Img src={javascriptImg}/>
-                                <Card.Title>JavaScript</Card.Title>
-                            </Card>
-                            <Card style={styles.skillsCard}>
-                                <Card.Img src={reactImg}/>
-                                <Card.Title>React</Card.Title>
-                            </Card>
+                            <CardGroup style={styles.cardRow}>
+                                <Card style={styles.skillsCard}>
+                                    <Card.Img src={pythonImg}/>
+                                    <Card.Text>Python</Card.Text>
+                                </Card>
+                                <Card style={styles.skillsCard}>
+                                    <Card.Img src={sqlImg}/>
+                                    <Card.Text>SQL</Card.Text>
+                                </Card>
+                                <Card style={styles.skillsCard}>
+                                    <Card.Img src={javascriptImg}/>
+                                    <Card.Text>JavaScript</Card.Text>
+                                </Card>
+                                <Card style={styles.skillsCard}>
+                                    <Card.Img src={reactImg}/>
+                                    <Card.Text>React</Card.Text>
+                                </Card>
+                            </CardGroup>
                         </div>
                     </div>
                 </div>
 
                 {/* Projects */}
-                <div>
-                    <div style={styles.projectSection}>
-                        <h1>Projects</h1>
+                {/*<div>*/}
+                {/*    <div style={styles.projectSection}>*/}
+                {/*        <h1>Projects</h1>*/}
 
-                        <Carousel variant="dark" height={700}>
-                            <Carousel.Item interval={2000}>
-                                <img src={notepad}/>
-                                <Carousel.Caption>
-                                    <h2>Project #1: Notepad</h2>
-                                    <p>
-                                        An Android notepad app for Android devices.
-                                        The notepad allows you to create and store multiple
-                                        notes.
-                                    </p>
-                                    <p>
-                                        Each note is encrypted with a password, a
-                                        password is required to decrypt each note.
-                                    </p>
-                                </Carousel.Caption>
-                            </Carousel.Item>
+                {/*        <Carousel variant="dark" height={700}>*/}
+                {/*            <Carousel.Item interval={8000}>*/}
+                {/*                <img src={notepad}/>*/}
+                {/*                <Carousel.Caption>*/}
+                {/*                    <h2>Project #1: Notepad</h2>*/}
+                {/*                    <p>*/}
+                {/*                        An Android notepad app for Android devices.*/}
+                {/*                        The notepad allows you to create and store multiple*/}
+                {/*                        notes.*/}
+                {/*                    </p>*/}
+                {/*                    <p>*/}
+                {/*                        Each note is encrypted with a password, a*/}
+                {/*                        password is required to decrypt each note.*/}
+                {/*                    </p>*/}
+                {/*                </Carousel.Caption>*/}
+                {/*            </Carousel.Item>*/}
 
-                            <Carousel.Item interval={2000}>
-                                <img src={minesweeper}/>
-                                <Carousel.Caption>
-                                    <h2>Project #2: Minesweeper</h2>
-                                    <p>
-                                        A simple minesweeper game made using JavaFX.
-                                        The rules are the same as minesweeper,
-                                    </p>
-                                    <p>
-                                        you must find all the tiles that don’t have
-                                        mines and avoid the tiles with mines
-                                    </p>
-                                </Carousel.Caption>
-                            </Carousel.Item>
-                        </Carousel>
+                {/*            <Carousel.Item interval={8000}>*/}
+                {/*                <img src={minesweeper}/>*/}
+                {/*                <Carousel.Caption>*/}
+                {/*                    <h2>Project #2: Minesweeper</h2>*/}
+                {/*                    <p>*/}
+                {/*                        A simple minesweeper game made using JavaFX.*/}
+                {/*                        The rules are the same as minesweeper,*/}
+                {/*                    </p>*/}
+                {/*                    <p>*/}
+                {/*                        you must find all the tiles that don’t have*/}
+                {/*                        mines and avoid the tiles with mines*/}
+                {/*                    </p>*/}
+                {/*                </Carousel.Caption>*/}
+                {/*            </Carousel.Item>*/}
+                {/*        </Carousel>*/}
 
-                    </div>
-                </div>
+                {/*    </div>*/}
+                {/*</div>*/}
 
                 <div style={styles.dividerBlue}/>
 
                 {/* Education */}
                 <div>
-                    <div style={styles.educationSection}>
-                        <h1>Education</h1>
-                        <h2>Sheridan College</h2>
-                        <p>
-                            I am currently a second-year Computer Engineering
-                            Technology student at Sheridan College.
-                        </p>
-                        <p>2020 - Present</p>
-                        <h3>Relevant Courses</h3>
-                        <p>C Programming</p>
-                        <p>Computer Architecture</p>
-                        <p>Database Design and Implementation</p>
-                        <p>Java Programming</p>
-                        <p>Linux/Unix Operating Systems</p>
-                    </div>
-                    <Parallax bgImage={education} strength={-300}>
-                        <div style={styles.education}/>
-                    </Parallax>
+                    <MediaQuery minWidth={800}>
+                        <div style={styles.educationSection}>
+                            <h1>Education</h1>
+                            <h2>Sheridan College</h2>
+                            <p>
+                                I am currently a second-year Computer Engineering
+                                Technology student at Sheridan College.
+                            </p>
+                            <p>2020 - Present</p>
+                            <h3>Relevant Courses</h3>
+                            <p>C Programming</p>
+                            <p>Computer Architecture</p>
+                            <p>Database Design and Implementation</p>
+                            <p>Java Programming</p>
+                            <p>Linux/Unix Operating Systems</p>
+                        </div>
+                        <Parallax bgImage={education} strength={-300}>
+                            <div style={styles.education}/>
+                        </Parallax>
+                    </MediaQuery>
+                    <MediaQuery maxWidth={800}>
+                        <div style={styles.educationSectionSmall}>
+                            <h1>Education</h1>
+                            <h2>Sheridan College</h2>
+                            <p>
+                                I am currently a second-year Computer Engineering
+                                Technology student at Sheridan College.
+                            </p>
+                            <p>2020 - Present</p>
+                            <h3>Relevant Courses</h3>
+                            <p>C Programming</p>
+                            <p>Computer Architecture</p>
+                            <p>Database Design and Implementation</p>
+                            <p>Java Programming</p>
+                            <p>Linux/Unix Operating Systems</p>
+                        </div>
+                    </MediaQuery>
                 </div>
 
                 <div style={styles.dividerBlue}/>
@@ -375,28 +481,51 @@ class App extends Component {
 
                 {/* Volunteer */}
                 <div>
-                    <div style={styles.volunteerSection}>
-                        <h1>Volunteer Experience</h1>
-                        <h2>Youth Program Volunteer | City of Brampton</h2>
-                        <h2>Summer 2018 | Brampton, ON</h2>
-                        <p>
-                            Organized activities and cooperated with city
-                            staff in managing indoor and outdoor activities such as
-                            crafts, cooking, fishing, and sports at a summer camp.
-                        </p>
-                        <br/>
-                        <h2>CYC Volunteer | TRCA</h2>
-                        <h2>Summer 2017 | Brampton, ON</h2>
-                        <p>
-                            Assisted in restoration work, roadside cleanup, and
-                            maintenance at camps, community farm, and field centres
-                            as a Conservation Youth Corps Volunteer for the Toronto
-                            and Region Conservation Authority.
-                        </p>
-                    </div>
-                    <Parallax blur={{min: 15, max: -15}} bgImage={volunteer} strength={500}>
-                        <div style={styles.volunteer}/>
-                    </Parallax>
+                    <MediaQuery minWidth={800}>
+                        <div style={styles.volunteerSection}>
+                            <h1>Volunteer Experience</h1>
+                            <h2>Youth Program Volunteer | City of Brampton</h2>
+                            <h2>Summer 2018 | Brampton, ON</h2>
+                            <p>
+                                Organized activities and cooperated with city
+                                staff in managing indoor and outdoor activities such as
+                                crafts, cooking, fishing, and sports at a summer camp.
+                            </p>
+                            <br/>
+                            <h2>CYC Volunteer | TRCA</h2>
+                            <h2>Summer 2017 | Brampton, ON</h2>
+                            <p>
+                                Assisted in restoration work, roadside cleanup, and
+                                maintenance at camps, community farm, and field centres
+                                as a Conservation Youth Corps Volunteer for the Toronto
+                                and Region Conservation Authority.
+                            </p>
+                        </div>
+                        <Parallax blur={{min: 15, max: -15}} bgImage={volunteer} strength={500}>
+                            <div style={styles.volunteer}/>
+                        </Parallax>
+                    </MediaQuery>
+                    <MediaQuery maxWidth={800}>
+                        <div style={styles.volunteerSectionSmall}>
+                            <h1>Volunteer Experience</h1>
+                            <h2>Youth Program Volunteer | City of Brampton</h2>
+                            <h2>Summer 2018 | Brampton, ON</h2>
+                            <p>
+                                Organized activities and cooperated with city
+                                staff in managing indoor and outdoor activities such as
+                                crafts, cooking, fishing, and sports at a summer camp.
+                            </p>
+                            <br/>
+                            <h2>CYC Volunteer | TRCA</h2>
+                            <h2>Summer 2017 | Brampton, ON</h2>
+                            <p>
+                                Assisted in restoration work, roadside cleanup, and
+                                maintenance at camps, community farm, and field centres
+                                as a Conservation Youth Corps Volunteer for the Toronto
+                                and Region Conservation Authority.
+                            </p>
+                        </div>
+                    </MediaQuery>
                 </div>
 
                 <div style={styles.dividerWhite}/>
@@ -405,16 +534,27 @@ class App extends Component {
 
                 {/* Contact */}
                 <div>
-                    <div style={styles.contactSection}>
-                        <h1>Contact</h1>
-                        <h5>dankevin@sheridancollege.ca</h5>
-                        <h5><a href="https://github.com/KevinDang12">GitHub</a></h5>
-                        <h5><a href="https://www.linkedin.com/in/kevin-dang-comptech/">LinkedIn</a></h5>
-                        <h5><a href={resume} target = "_blank">Resume</a></h5>
-                    </div>
-                    <Parallax blur={{min: 8, max: -8}} bgImage={contact} strength={-250}>
-                        <div style={styles.contact}/>
-                    </Parallax>
+                    <MediaQuery minWidth={800}>
+                        <div style={styles.contactSection}>
+                            <h1>Contact</h1>
+                            <h5>dankevin@sheridancollege.ca</h5>
+                            <h5><a href="https://github.com/KevinDang12">GitHub</a></h5>
+                            <h5><a href="https://www.linkedin.com/in/kevin-dang-comptech/">LinkedIn</a></h5>
+                            <h5><a href={resume} target = "_blank">Resume</a></h5>
+                        </div>
+                        <Parallax blur={{min: 8, max: -8}} bgImage={contact} strength={-250}>
+                            <div style={styles.contact}/>
+                        </Parallax>
+                    </MediaQuery>
+                    <MediaQuery maxWidth={800}>
+                        <div style={styles.contactSectionSmall}>
+                            <h1>Contact</h1>
+                            <h5>dankevin@sheridancollege.ca</h5>
+                            <h5><a href="https://github.com/KevinDang12">GitHub</a></h5>
+                            <h5><a href="https://www.linkedin.com/in/kevin-dang-comptech/">LinkedIn</a></h5>
+                            <h5><a href={resume} target = "_blank">Resume</a></h5>
+                        </div>
+                    </MediaQuery>
                 </div>
             </div>
         );
