@@ -117,7 +117,7 @@ const styles = {
         zIndex: 1,
         width: '100%',
         maxWidth: '100%',
-        height: '100vh'
+        minHeight: '80vh'
     },
 
     education: {
@@ -304,6 +304,11 @@ const styles = {
         justifyContent: 'center',
         objectFit: 'cover',
     },
+
+    carouselCaptionStyle: {
+        backgroundColor: 'rgba(255,255,255,0.8)',
+        maxWidth: '100%'
+    }
 }
 
 class App extends Component {
@@ -446,46 +451,50 @@ class App extends Component {
                     </MediaQuery>
                 </div>
 
-                {/* Projects */}
-                {/*<div>*/}
-                {/*    <div style={styles.projectSection}>*/}
-                {/*        <h1>Projects</h1>*/}
+                 {/*Projects */}
+                <div>
+                    <div style={styles.projectSection}>
+                        <h1>Projects</h1>
 
-                {/*        <Carousel variant="dark" height={700}>*/}
-                {/*            <Carousel.Item interval={8000}>*/}
-                {/*                <img src={notepad}/>*/}
-                {/*                <Carousel.Caption>*/}
-                {/*                    <h2>Project #1: Notepad</h2>*/}
-                {/*                    <p>*/}
-                {/*                        An Android notepad app for Android devices.*/}
-                {/*                        The notepad allows you to create and store multiple*/}
-                {/*                        notes.*/}
-                {/*                    </p>*/}
-                {/*                    <p>*/}
-                {/*                        Each note is encrypted with a password, a*/}
-                {/*                        password is required to decrypt each note.*/}
-                {/*                    </p>*/}
-                {/*                </Carousel.Caption>*/}
-                {/*            </Carousel.Item>*/}
+                        <Carousel variant="dark" height={700} style={{width: '100%'}}>
+                            <Carousel.Item interval={8000}>
+                                <img src={notepad} style={{maxWidth: '100%'}}/>
+                                <Carousel.Caption  style={styles.carouselCaptionStyle}>
+                                    <h2>Project #1: Notepad</h2>
+                                    <MediaQuery minWidth={800}>
+                                        <p>
+                                            An Android notepad app for Android devices.
+                                            The notepad allows you to create and store multiple
+                                            notes.
+                                        </p>
+                                        <p>
+                                            Each note is encrypted with a password, a
+                                            password is required to decrypt each note.
+                                        </p>
+                                    </MediaQuery>
+                                </Carousel.Caption>
+                            </Carousel.Item>
 
-                {/*            <Carousel.Item interval={8000}>*/}
-                {/*                <img src={minesweeper}/>*/}
-                {/*                <Carousel.Caption>*/}
-                {/*                    <h2>Project #2: Minesweeper</h2>*/}
-                {/*                    <p>*/}
-                {/*                        A simple minesweeper game made using JavaFX.*/}
-                {/*                        The rules are the same as minesweeper,*/}
-                {/*                    </p>*/}
-                {/*                    <p>*/}
-                {/*                        you must find all the tiles that don’t have*/}
-                {/*                        mines and avoid the tiles with mines*/}
-                {/*                    </p>*/}
-                {/*                </Carousel.Caption>*/}
-                {/*            </Carousel.Item>*/}
-                {/*        </Carousel>*/}
+                            <Carousel.Item interval={8000}>
+                                <img src={minesweeper} style={{maxWidth: '100%'}}/>
+                                <Carousel.Caption style={styles.carouselCaptionStyle}>
+                                    <h2>Project #2: Minesweeper</h2>
+                                    <MediaQuery minWidth={800}>
+                                        <p>
+                                            A simple minesweeper game made using JavaFX.
+                                            The rules are the same as minesweeper,
+                                        </p>
+                                        <p>
+                                            you must find all the tiles that don’t have
+                                            mines and avoid the tiles with mines
+                                        </p>
+                                    </MediaQuery>
+                                </Carousel.Caption>
+                            </Carousel.Item>
+                        </Carousel>
 
-                {/*    </div>*/}
-                {/*</div>*/}
+                    </div>
+                </div>
 
                 <div style={styles.dividerBlue}/>
 
