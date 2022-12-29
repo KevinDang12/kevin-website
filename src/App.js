@@ -1,27 +1,26 @@
 import './App.css';
 import React, {Component} from 'react';
-import keyboard from './background.jpg';
-import volunteer from './volunteer.jpg';
-import about from './About.jpg';
-import notepad from './Notepad.jpg';
-import minesweeper from './Minesweeper.jpg';
-import education from './Education.jpg'
-import contact from './Contact.jpg';
-import javaImg from './Java.png';
-import androidImg from './Android.png';
-import cImg from './C.png';
-import cppImg from './C++.png';
-import pythonImg from './Python.png';
-import sqlImg from './SQL.png';
-import javascriptImg from './Javascript.png';
-import reactImg from './React.png';
-import resume from './Resume.pdf';
+import keyboard from './resources/background.jpg';
+import about from './resources/About.jpg';
+import notepad from './resources/Notepad.jpg';
+import minesweeper from './resources/Minesweeper.jpg';
+import education from './resources/Education.jpg'
+import contact from './resources/Contact.jpg';
+import javaImg from './resources/Java.png';
+import androidImg from './resources/Android.png';
+import cImg from './resources/C.png';
+import cppImg from './resources/C++.png';
+import pythonImg from './resources/Python.png';
+import sqlImg from './resources/SQL.png';
+import javascriptImg from './resources/Javascript.png';
+import reactImg from './resources/React.png';
+import resume from './resources/Resume.pdf';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Carousel from 'react-bootstrap/Carousel';
 import Card from 'react-bootstrap/Card';
 import CardGroup from 'react-bootstrap/CardGroup'
 import { Parallax } from 'react-parallax';
-import MediaQuery from 'react-responsive'
+import MediaQuery from 'react-responsive';
 
 const styles = {
     background: {
@@ -144,7 +143,7 @@ const styles = {
         height: '100vh'
     },
 
-    volunteer: {
+    work: {
         padding: '0px',
         width: '100vw',
         height: '100vh',
@@ -152,21 +151,10 @@ const styles = {
         zIndex: -1
     },
 
-    volunteerSection: {
-        margin: '0px',
-        padding: '50px',
-        position: 'absolute',
-        textAlign: 'center',
-        flexDirection: 'column',
-        display: 'flex',
-        alignItems: 'center',
-        justifyContent: 'center',
+    workSection: {
         color: 'black',
-        backgroundColor: 'white',
-        zIndex: 1,
-        width: '55%',
-        height: '100vh',
-        right: '0%'
+        textAlign: 'center',
+        backgroundColor: '#4390e7',
     },
 
     contact: {
@@ -198,11 +186,6 @@ const styles = {
         width: '100%'
     },
 
-    skillsRow: {
-        width: '100%',
-
-    },
-
     skillsCard: {
         margin: '10px',
         padding: '20px',
@@ -227,6 +210,12 @@ const styles = {
     dividerBlue: {
         width: '100%',
         backgroundColor: '#f2f7fb',
+        height: '50px'
+    },
+
+    dividerDarkBlue: {
+        width: '100%',
+        backgroundColor: '#4390e7',
         height: '50px'
     },
 
@@ -264,22 +253,6 @@ const styles = {
         zIndex: 1,
         width: '100%',
         minHeight: '50vh'
-    },
-
-    volunteerSectionSmall: {
-        margin: '0px',
-        paddingLeft: '10px',
-        paddingRight: '10px',
-        textAlign: 'center',
-        flexDirection: 'column',
-        display: 'flex',
-        alignItems: 'center',
-        justifyContent: 'center',
-        color: 'black',
-        backgroundColor: 'white',
-        zIndex: 1,
-        width: '100%',
-        minHeight: '50vh',
     },
 
     contactSectionSmall: {
@@ -335,7 +308,7 @@ class App extends Component {
                             <h1>A Brief Summary about Me</h1>
                             <h5>
                                 My name is Kevin Dang, I am currently
-                                a second-year Computer Engineering
+                                a third-year Computer Engineering
                                 student. I have had an interest in working
                                 with computers and it has led me
                                 to have a passion for programming.
@@ -345,12 +318,13 @@ class App extends Component {
                             <div style={styles.about}/>
                         </Parallax>
                     </MediaQuery>
+
                     <MediaQuery maxWidth={800}>
                         <div style={styles.aboutSectionSmall}>
                             <h1>A Brief Summary about Me</h1>
                             <h5>
                                 My name is Kevin Dang, I am currently
-                                a second-year Computer Engineering
+                                a third-year Computer Engineering
                                 student. I have had an interest in working
                                 with computers and it has led me
                                 to have a passion for programming.
@@ -360,6 +334,32 @@ class App extends Component {
                 </div>
 
                 <div style={styles.dividerWhite}/>
+
+                <div style={styles.dividerDarkBlue}/>
+
+                {/* Work */}
+                <div style={styles.workSection}>
+                    <h1>Work Experience</h1>
+                    <h2>Teaching Assistant | Sheridan College</h2>
+                    <h2>September - December 2022 | Brampton, ON</h2>
+                    <ul className="text-align">
+                        <li>
+                            TA'd in Java (Object Oriented Programming), Computer Math,
+                            and Web development courses
+                        </li>
+                        <li>
+                            Assisted students with Java programming, Computer Math, and front-end web
+                            development by hosting tutorials, group reviews, and one-on-one sessions;
+                            Answered students' questions during lectures
+                        </li>
+                        <li>
+                            Contributed to updating the official Sheridan College website utilizing
+                            HTML to add new functionality
+                        </li>
+                    </ul>
+                </div>
+
+                <div style={styles.dividerDarkBlue}/>
 
                 {/* Skills */}
                 <div>
@@ -452,6 +452,7 @@ class App extends Component {
                 </div>
 
                  {/*Projects */}
+                {/* Add Full-stack website to projects */}
                 <div>
                     <div style={styles.projectSection}>
                         <h1>Projects</h1>
@@ -505,7 +506,7 @@ class App extends Component {
                             <h1>Education</h1>
                             <h2>Sheridan College</h2>
                             <p>
-                                I am currently a second-year Computer Engineering
+                                I am currently a third-year Computer Engineering
                                 Technology student at Sheridan College.
                             </p>
                             <p>2020 - Present</p>
@@ -525,7 +526,7 @@ class App extends Component {
                             <h1>Education</h1>
                             <h2>Sheridan College</h2>
                             <p>
-                                I am currently a second-year Computer Engineering
+                                I am currently a third-year Computer Engineering
                                 Technology student at Sheridan College.
                             </p>
                             <p>2020 - Present</p>
@@ -540,59 +541,6 @@ class App extends Component {
                 </div>
 
                 <div style={styles.dividerBlue}/>
-
-                <div style={styles.dividerWhite}/>
-
-                {/* Volunteer */}
-                <div>
-                    <MediaQuery minWidth={800}>
-                        <div style={styles.volunteerSection}>
-                            <h1>Volunteer Experience</h1>
-                            <h2>Youth Program Volunteer | City of Brampton</h2>
-                            <h2>Summer 2018 | Brampton, ON</h2>
-                            <p>
-                                Organized activities and cooperated with city
-                                staff in managing indoor and outdoor activities such as
-                                crafts, cooking, fishing, and sports at a summer camp.
-                            </p>
-                            <br/>
-                            <h2>CYC Volunteer | TRCA</h2>
-                            <h2>Summer 2017 | Brampton, ON</h2>
-                            <p>
-                                Assisted in restoration work, roadside cleanup, and
-                                maintenance at camps, community farm, and field centres
-                                as a Conservation Youth Corps Volunteer for the Toronto
-                                and Region Conservation Authority.
-                            </p>
-                        </div>
-                        <Parallax blur={{min: 15, max: -15}} bgImage={volunteer} strength={500}>
-                            <div style={styles.volunteer}/>
-                        </Parallax>
-                    </MediaQuery>
-                    <MediaQuery maxWidth={800}>
-                        <div style={styles.volunteerSectionSmall}>
-                            <h1>Volunteer Experience</h1>
-                            <h2>Youth Program Volunteer | City of Brampton</h2>
-                            <h2>Summer 2018 | Brampton, ON</h2>
-                            <p>
-                                Organized activities and cooperated with city
-                                staff in managing indoor and outdoor activities such as
-                                crafts, cooking, fishing, and sports at a summer camp.
-                            </p>
-                            <br/>
-                            <h2>CYC Volunteer | TRCA</h2>
-                            <h2>Summer 2017 | Brampton, ON</h2>
-                            <p>
-                                Assisted in restoration work, roadside cleanup, and
-                                maintenance at camps, community farm, and field centres
-                                as a Conservation Youth Corps Volunteer for the Toronto
-                                and Region Conservation Authority.
-                            </p>
-                        </div>
-                    </MediaQuery>
-                </div>
-
-                <div style={styles.dividerWhite}/>
 
                 <div style={styles.dividerPurple}/>
 
