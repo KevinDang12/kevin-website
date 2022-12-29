@@ -37,11 +37,9 @@
   }
 }
 
-.container {
-  text-align: center;
-}
-
 .text-align {
   display: inline-block;
   text-align: left;
+  margin: 5px 15%;
+  padding-top: 10px;
 }

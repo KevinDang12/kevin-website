@@ -154,7 +154,12 @@ const styles = {
     workSection: {
         color: 'black',
         textAlign: 'center',
-        backgroundColor: '#4390e7',
+        backgroundColor: '#00ffff',
+        height: '90vh',
+        display: 'flex',
+        flexDirection: 'column',
+        alignItems: 'center',
+        justifyContent: 'center',
     },
 
     contact: {
@@ -213,9 +218,15 @@ const styles = {
         height: '50px'
     },
 
-    dividerDarkBlue: {
+    dividerGray: {
         width: '100%',
-        backgroundColor: '#4390e7',
+        backgroundColor: '#cdcdcd',
+        height: '25px'
+    },
+
+    dividerLightBlue: {
+        width: '100%',
+        backgroundColor: '#00ffff',
         height: '50px'
     },
 
@@ -335,31 +346,32 @@ class App extends Component {
 
                 <div style={styles.dividerWhite}/>
 
-                <div style={styles.dividerDarkBlue}/>
+                <div style={styles.dividerLightBlue}/>
 
                 {/* Work */}
                 <div style={styles.workSection}>
                     <h1>Work Experience</h1>
-                    <h2>Teaching Assistant | Sheridan College</h2>
-                    <h2>September - December 2022 | Brampton, ON</h2>
+                    <h2>Teaching Assistant</h2>
+                    <h2>Sheridan College</h2>
+                    <h2>September - December 2022</h2>
                     <ul className="text-align">
                         <li>
-                            TA'd in Java (Object Oriented Programming), Computer Math,
-                            and Web development courses
+                            TA'd in three courses: Java (Object Oriented Programming), Computer Mathematics,
+                            and front-end web development using HTML, CSS, and JavaScript
                         </li>
                         <li>
-                            Assisted students with Java programming, Computer Math, and front-end web
-                            development by hosting tutorials, group reviews, and one-on-one sessions;
-                            Answered students' questions during lectures
+                            Assisted students in those courses by answering students' questions during lectures,
+                            group reviews, and one-on-one sessions; hosted tutorials reviewing course concepts
                         </li>
                         <li>
-                            Contributed to updating the official Sheridan College website utilizing
+                            Contributed to updating a Time-Management LibGuide on
+                            the official Sheridan College website by adding new content and utilizing
                             HTML to add new functionality
                         </li>
                     </ul>
                 </div>
 
-                <div style={styles.dividerDarkBlue}/>
+                <div style={styles.dividerLightBlue}/>
 
                 {/* Skills */}
                 <div>
@@ -451,7 +463,9 @@ class App extends Component {
                     </MediaQuery>
                 </div>
 
-                 {/*Projects */}
+                <div style={styles.dividerGray}/>
+
+                {/*Projects */}
                 {/* Add Full-stack website to projects */}
                 <div>
                     <div style={styles.projectSection}>
@@ -496,6 +510,8 @@ class App extends Component {
 
                     </div>
                 </div>
+
+                <div style={styles.dividerGray}/>
 
                 <div style={styles.dividerBlue}/>
 
