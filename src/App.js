@@ -14,6 +14,7 @@ import pythonImg from './resources/Python.png';
 import sqlImg from './resources/SQL.png';
 import javascriptImg from './resources/Javascript.png';
 import reactImg from './resources/React.png';
+import code from './resources/code.png';
 import resume from './resources/Resume.pdf';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Carousel from 'react-bootstrap/Carousel';
@@ -148,7 +149,7 @@ const styles = {
         width: '100vw',
         height: '100vh',
         maxWidth: '100%',
-        zIndex: -1
+        zIndex: -1,
     },
 
     workSection: {
@@ -161,24 +162,41 @@ const styles = {
         alignItems: 'center',
         justifyContent: 'center',
         color: 'black',
-        backgroundColor: '#00ffff',
+        backgroundColor: '#9fdcdc',
         zIndex: 1,
-        width: '50%',
+        width: '48%',
         height: '100vh',
+        right: '0%'
+    },
+
+    workSectionSmall: {
+        margin: '0px',
+        paddingLeft: '10px',
+        paddingRight: '10px',
+        textAlign: 'center',
+        flexDirection: 'column',
+        display: 'flex',
+        alignItems: 'center',
+        justifyContent: 'center',
+        color: 'black',
+        backgroundColor: '#9fdcdc',
+        zIndex: 1,
+        width: '100%',
+        minHeight: '50vh',
     },
 
     contact: {
         padding: '0px',
         width: '100vw',
-        height: '100vh',
+        height: '50vh',
         maxWidth: '100%',
-        zIndex: -1
+        zIndex: -1,
     },
 
     contactSection: {
         margin: '0px',
         padding: '0px',
-        position: 'absolute',
+        // position: 'absolute',
         textAlign: 'center',
         flexDirection: 'column',
         display: 'flex',
@@ -187,8 +205,8 @@ const styles = {
         color: 'black',
         backgroundColor: '#d2beff',
         zIndex: 1,
-        width: '50%',
-        height: '100vh'
+        width: '100%',
+        height: '50vh'
     },
 
     carouselBackground: {
@@ -226,12 +244,12 @@ const styles = {
     dividerGray: {
         width: '100%',
         backgroundColor: '#cdcdcd',
-        height: '25px'
+        height: '50px'
     },
 
     dividerLightBlue: {
         width: '100%',
-        backgroundColor: '#00ffff',
+        backgroundColor: '#9fdcdc',
         height: '50px'
     },
 
@@ -354,31 +372,58 @@ class App extends Component {
                 <div style={styles.dividerLightBlue}/>
 
                 {/* Work */}
-                <div style={styles.workSection}>
-                    <h1>Work Experience</h1>
-                    <h2>Teaching Assistant</h2>
-                    <h2>Sheridan College</h2>
-                    <h2>September - December 2022</h2>
-                    <ul className="text-align">
-                        <li>
-                            TA'd in three courses: Java (Object Oriented Programming), Computer Mathematics,
-                            and front-end web development using HTML, CSS, and JavaScript
-                        </li>
-                        <li>
-                            Assisted students in those courses by answering students' questions during lectures,
-                            group reviews, and one-on-one sessions; hosted tutorials reviewing course concepts
-                        </li>
-                        <li>
-                            Contributed to updating a Time-Management LibGuide on
-                            the official Sheridan College website by adding new content and utilizing
-                            HTML to add new functionality
-                        </li>
-                    </ul>
-                </div>
+                <div>
+                    <MediaQuery minWidth={800}>
+                        <div style={styles.workSection}>
+                            <h1>Work Experience</h1>
+                            <h2>Teaching Assistant</h2>
+                            <h2>Sheridan College</h2>
+                            <h2>September - December 2022</h2>
+                            <ul className="text-align">
+                                <li>
+                                    TA'd in three courses: Java (Object Oriented Programming), Computer Mathematics,
+                                    and front-end web development using HTML, CSS, and JavaScript
+                                </li>
+                                <li>
+                                    Assisted students in those courses by answering students' questions during lectures,
+                                    group reviews, and one-on-one sessions; hosted tutorials reviewing course concepts
+                                </li>
+                                <li>
+                                    Contributed to updating a Time-Management LibGuide on
+                                    the official Sheridan College website by adding new content and utilizing
+                                    HTML to add new functionality
+                                </li>
+                            </ul>
+                        </div>
+                        <Parallax bgImage={code} strength={450}>
+                            <div style={styles.work}/>
+                        </Parallax>
+                    </MediaQuery>
 
-                <Parallax blur={{min: -5, max: 5}} bgImage={about} strength={200}>
-                    <div style={styles.about}/>
-                </Parallax>
+                    <MediaQuery maxWidth={800}>
+                        <div style={styles.workSectionSmall}>
+                            <h1>Work Experience</h1>
+                            <h2>Teaching Assistant</h2>
+                            <h2>Sheridan College</h2>
+                            <h2>September - December 2022</h2>
+                            <ul className="text-align">
+                                <li>
+                                    TA'd in three courses: Java (Object Oriented Programming), Computer Mathematics,
+                                    and front-end web development using HTML, CSS, and JavaScript
+                                </li>
+                                <li>
+                                    Assisted students in those courses by answering students' questions during lectures,
+                                    group reviews, and one-on-one sessions; hosted tutorials reviewing course concepts
+                                </li>
+                                <li>
+                                    Contributed to updating a Time-Management LibGuide on
+                                    the official Sheridan College website by adding new content and utilizing
+                                    HTML to add new functionality
+                                </li>
+                            </ul>
+                        </div>
+                    </MediaQuery>
+                </div>
 
                 <div style={styles.dividerLightBlue}/>
 
@@ -475,10 +520,9 @@ class App extends Component {
                 <div style={styles.dividerGray}/>
 
                 {/*Projects */}
-                {/* Add Full-stack website to projects */}
                 <div>
                     <div style={styles.projectSection}>
-                        <h1>Projects</h1>
+                        <h1 style={{paddingBottom: "20px"}}>Projects</h1>
 
                         <Carousel variant="dark" height={700} style={{width: '100%'}}>
                             <Carousel.Item interval={8000}>
@@ -505,12 +549,15 @@ class App extends Component {
                                     <h2>Project #2: Minesweeper</h2>
                                     <MediaQuery minWidth={800}>
                                         <p>
-                                            A simple minesweeper game made using JavaFX.
-                                            The rules are the same as minesweeper,
+                                            A minesweeper game made using React and JavaScript.
                                         </p>
                                         <p>
-                                            you must find all the tiles that don’t have
-                                            mines and avoid the tiles with mines
+                                            It also includes a backend server
+                                            that allows users to save their
+                                            minesweeper games and access it on different devices.
+                                        </p>
+                                        <p>
+                                            You can find the minesweeper web game <a href="https://kevindang12.github.io/minesweeper-website/">here</a>.
                                         </p>
                                     </MediaQuery>
                                 </Carousel.Caption>
@@ -575,11 +622,21 @@ class App extends Component {
                         <div style={styles.contactSection}>
                             <h1>Contact</h1>
                             <h5>dankevin@sheridancollege.ca</h5>
-                            <h5><a href="https://github.com/KevinDang12">GitHub</a></h5>
-                            <h5><a href="https://www.linkedin.com/in/kevin-dang-comptech/">LinkedIn</a></h5>
-                            <h5><a href={resume} target = "_blank">Resume</a></h5>
+                            <table>
+                                <tr>
+                                    <td>
+                                        <h5><a href="https://github.com/KevinDang12">GitHub</a></h5>
+                                    </td>
+                                    <td>
+                                        <h5><a href="https://www.linkedin.com/in/kevin-dang-comptech/">LinkedIn</a></h5>
+                                    </td>
+                                    <td>
+                                        <h5><a href={resume} target = "_blank">Resume</a></h5>
+                                    </td>
+                                </tr>
+                            </table>
                         </div>
-                        <Parallax blur={{min: 8, max: -8}} bgImage={contact} strength={-250}>
+                        <Parallax blur={{min: 10, max: -25}} bgImage={contact} strength={-250}>
                             <div style={styles.contact}/>
                         </Parallax>
                     </MediaQuery>
@@ -587,9 +644,19 @@ class App extends Component {
                         <div style={styles.contactSectionSmall}>
                             <h1>Contact</h1>
                             <h5>dankevin@sheridancollege.ca</h5>
-                            <h5><a href="https://github.com/KevinDang12">GitHub</a></h5>
-                            <h5><a href="https://www.linkedin.com/in/kevin-dang-comptech/">LinkedIn</a></h5>
-                            <h5><a href={resume} target = "_blank">Resume</a></h5>
+                            <table>
+                                <tr>
+                                    <td>
+                                        <h5><a href="https://github.com/KevinDang12">GitHub</a></h5>
+                                    </td>
+                                    <td>
+                                        <h5><a href="https://www.linkedin.com/in/kevin-dang-comptech/">LinkedIn</a></h5>
+                                    </td>
+                                    <td>
+                                        <h5><a href={resume} target = "_blank">Resume</a></h5>
+                                    </td>
+                                </tr>
+                            </table>
                         </div>
                     </MediaQuery>
                 </div>
