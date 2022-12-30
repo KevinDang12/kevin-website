@@ -152,14 +152,19 @@ const styles = {
     },
 
     workSection: {
-        color: 'black',
+        margin: '0px',
+        padding: '0px',
+        position: 'absolute',
         textAlign: 'center',
-        backgroundColor: '#00ffff',
-        height: '90vh',
-        display: 'flex',
         flexDirection: 'column',
+        display: 'flex',
         alignItems: 'center',
         justifyContent: 'center',
+        color: 'black',
+        backgroundColor: '#00ffff',
+        zIndex: 1,
+        width: '50%',
+        height: '100vh',
     },
 
     contact: {
@@ -370,6 +375,10 @@ class App extends Component {
                         </li>
                     </ul>
                 </div>
+
+                <Parallax blur={{min: -5, max: 5}} bgImage={about} strength={200}>
+                    <div style={styles.about}/>
+                </Parallax>
 
                 <div style={styles.dividerLightBlue}/>
 
