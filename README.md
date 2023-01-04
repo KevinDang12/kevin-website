@@ -2,7 +2,7 @@
 
 This is a portfolio on my projects and shows information about me.
 
-## Available Scripts s
+## Available Scripts
 
 In the project directory, you can run:
 
