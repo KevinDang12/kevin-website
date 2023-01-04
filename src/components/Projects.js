@@ -82,7 +82,7 @@ class Projects extends Component {
                                         minesweeper games and access it on different devices.
                                     </p>
                                     <p>
-                                        You can find the minesweeper web game <a href="http://44.202.73.91/minesweeper-full/"
+                                        You can find the minesweeper web game <a href="http://44.202.73.91/minesweeper/"
                                            target="_blank" rel="noreferrer">here
                                         </a>.
                                     </p>
