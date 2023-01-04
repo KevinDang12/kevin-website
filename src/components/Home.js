@@ -34,7 +34,7 @@ class Home extends Component {
             <div style={{background: 'black'}}>
                 <div style={styles.backgroundSection}>
                     <h1>Hi. I'm Kevin.</h1>
-                    <h2>I’m a Computer Engineering Technology Student.</h2>
+                    <h2>I’m a Computer Engineering Student.</h2>
                     <h2>You may check out more about me and my projects below.</h2>
                 </div>
                 <Parallax blur={{min: -20, max: 20}} bgImage={keyboard}>

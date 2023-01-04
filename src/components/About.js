@@ -56,7 +56,7 @@ class About extends Component {
                             My name is Kevin Dang, I am currently
                             a third-year Computer Engineering Technology
                             student. I have had an interest in working
-                            with computers and it has led me
+                            with computers for a long time and it has led me
                             to have a passion for programming.
                         </h5>
                     </div>
@@ -72,7 +72,7 @@ class About extends Component {
                             My name is Kevin Dang, I am currently
                             a third-year Computer Engineering Technology
                             student. I have had an interest in working
-                            with computers and it has led me
+                            with computers for a long time and it has led me
                             to have a passion for programming.
                         </h5>
                     </div>
