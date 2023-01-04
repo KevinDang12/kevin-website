@@ -74,7 +74,7 @@ class Projects extends Component {
                                 <h2>Project #2: Minesweeper</h2>
                                 <MediaQuery minWidth={800}>
                                     <p>
-                                        A minesweeper game made using React and JavaScript that is hosted on AWS.
+                                        A minesweeper game created using React and Node.js; it is hosted on AWS.
                                     </p>
                                     <p>
                                         It also includes a backend server
@@ -82,8 +82,7 @@ class Projects extends Component {
                                         minesweeper games and access it on different devices.
                                     </p>
                                     <p>
-                                        You can find the minesweeper web game
-                                        <a href="http://44.202.73.91/minesweeper-full/"
+                                        You can find the minesweeper web game <a href="http://44.202.73.91/minesweeper-full/"
                                            target="_blank" rel="noreferrer">here
                                         </a>.
                                     </p>
