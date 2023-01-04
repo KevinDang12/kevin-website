@@ -53,17 +53,25 @@ class Contact extends Component {
                         <h1>Contact</h1>
                         <h5>dankevin@sheridancollege.ca</h5>
                         <table>
-                            <tr>
-                                <td>
-                                    <h5><a href="https://github.com/KevinDang12">GitHub</a></h5>
-                                </td>
-                                <td>
-                                    <h5><a href="https://www.linkedin.com/in/kevin-dang-comptech/">LinkedIn</a></h5>
-                                </td>
-                                <td>
-                                    <h5><a href={resume} target = "#">Resume</a></h5>
-                                </td>
-                            </tr>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <h5>
+                                            <a href="https://github.com/KevinDang12"
+                                               target="_blank" rel="noreferrer">GitHub</a>
+                                        </h5>
+                                    </td>
+                                    <td>
+                                        <h5>
+                                            <a href="https://www.linkedin.com/in/kevin-dang-comptech/"
+                                               target="_blank" rel="noreferrer">LinkedIn</a>
+                                        </h5>
+                                    </td>
+                                    <td>
+                                        <h5><a href={resume} target="_blank" rel="noreferrer">Resume</a></h5>
+                                    </td>
+                                </tr>
+                            </tbody>
                         </table>
                     </div>
                     <Parallax blur={{min: 10, max: -25}} bgImage={contact} strength={-250}>
@@ -76,17 +84,25 @@ class Contact extends Component {
                         <h1>Contact</h1>
                         <h5>dankevin@sheridancollege.ca</h5>
                         <table>
-                            <tr>
-                                <td>
-                                    <h5><a href="https://github.com/KevinDang12">GitHub</a></h5>
-                                </td>
-                                <td>
-                                    <h5><a href="https://www.linkedin.com/in/kevin-dang-comptech/">LinkedIn</a></h5>
-                                </td>
-                                <td>
-                                    <h5><a href={resume} target = "#">Resume</a></h5>
-                                </td>
-                            </tr>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <h5>
+                                            <a href="https://github.com/KevinDang12"
+                                               target="_blank" rel="noreferrer">GitHub</a>
+                                        </h5>
+                                    </td>
+                                    <td>
+                                        <h5>
+                                            <a href="https://www.linkedin.com/in/kevin-dang-comptech/"
+                                               target="_blank" rel="noreferrer">LinkedIn</a>
+                                        </h5>
+                                    </td>
+                                    <td>
+                                        <h5><a href={resume} target="_blank" rel="noreferrer">Resume</a></h5>
+                                    </td>
+                                </tr>
+                            </tbody>
                         </table>
                     </div>
                 </MediaQuery>

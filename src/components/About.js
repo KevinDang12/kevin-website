@@ -54,7 +54,7 @@ class About extends Component {
                         <h1>A Brief Summary about Me</h1>
                         <h5>
                             My name is Kevin Dang, I am currently
-                            a third-year Computer Engineering
+                            a third-year Computer Engineering Technology
                             student. I have had an interest in working
                             with computers and it has led me
                             to have a passion for programming.
@@ -70,7 +70,7 @@ class About extends Component {
                         <h1>A Brief Summary about Me</h1>
                         <h5>
                             My name is Kevin Dang, I am currently
-                            a third-year Computer Engineering
+                            a third-year Computer Engineering Technology
                             student. I have had an interest in working
                             with computers and it has led me
                             to have a passion for programming.
