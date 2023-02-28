@@ -31,8 +31,11 @@ const styles = {
 
     skillsCard: {
         margin: '10px',
-        padding: '20px',
+        padding: '30px',
         objectFit: 'cover',
+        alignItems: 'center',
+        width: '180px',
+        height: '200px',
     },
 
     cardRow: {
@@ -45,12 +48,44 @@ const styles = {
         width: '100%',
     },
 
-    smallSkillImage: {
-        width: '100px',
-        height: '100px',
+    skillImage: {
+        width: '80%',
+        height: '80%',
         alignItems: 'center',
         justifyContent: 'center',
+        marginTop: '10%',
+        marginBottom: '10%',
+    },
+
+    skillImage2: {
+        width: '100%',
+        height: '100%',
+        alignItems: 'center',
+    },
+
+    smallSkillsCard: {
+        margin: '10px',
+        padding: '30px',
         objectFit: 'cover',
+        alignItems: 'center',
+        width: '150px',
+        height: '150px',
+    },
+
+    smallSkillImage: {
+        width: '70%',
+        height: '70%',
+        alignItems: 'center',
+        justifyContent: 'center',
+        marginTop: '10%',
+        marginBottom: '10%',
+    },
+
+    smallSkillImage2: {
+        width: '90%',
+        height: '90%',
+        alignItems: 'center',
+        justifyContent: 'center',
     },
 }
 
@@ -64,19 +99,19 @@ class Skills extends Component {
                         <div>
                             <CardGroup style={styles.cardRow}>
                                 <Card style={styles.skillsCard}>
-                                    <Card.Img src={javaImg}/>
+                                    <Card.Img src={javaImg} style={styles.skillImage2}/>
                                     <Card.Text>Java</Card.Text>
                                 </Card>
                                 <Card style={styles.skillsCard}>
-                                    <Card.Img src={androidImg}/>
+                                    <Card.Img src={androidImg} style={styles.skillImage2}/>
                                     <Card.Text>Android</Card.Text>
                                 </Card>
                                 <Card style={styles.skillsCard}>
-                                    <Card.Img src={cImg}/>
+                                    <Card.Img src={cImg} style={styles.skillImage}/>
                                     <Card.Text>C</Card.Text>
                                 </Card>
                                 <Card style={styles.skillsCard}>
-                                    <Card.Img src={cppImg}/>
+                                    <Card.Img src={cppImg} style={styles.skillImage}/>
                                     <Card.Text>C++</Card.Text>
                                 </Card>
                             </CardGroup>
@@ -85,19 +120,19 @@ class Skills extends Component {
                         <div>
                             <CardGroup style={styles.cardRow}>
                                 <Card style={styles.skillsCard}>
-                                    <Card.Img src={pythonImg}/>
+                                    <Card.Img src={pythonImg} style={styles.skillImage}/>
                                     <Card.Text>Python</Card.Text>
                                 </Card>
                                 <Card style={styles.skillsCard}>
-                                    <Card.Img src={sqlImg}/>
+                                    <Card.Img src={sqlImg} style={styles.skillImage}/>
                                     <Card.Text>SQL</Card.Text>
                                 </Card>
                                 <Card style={styles.skillsCard}>
-                                    <Card.Img src={javascriptImg}/>
+                                    <Card.Img src={javascriptImg} style={styles.skillImage}/>
                                     <Card.Text>JavaScript</Card.Text>
                                 </Card>
                                 <Card style={styles.skillsCard}>
-                                    <Card.Img src={reactImg}/>
+                                    <Card.Img src={reactImg} style={styles.skillImage}/>
                                     <Card.Text>React</Card.Text>
                                 </Card>
                             </CardGroup>
@@ -109,35 +144,35 @@ class Skills extends Component {
                     <div style={styles.skillSection}>
                         <h1>My Skills</h1>
                         <div style={styles.cardRow}>
-                            <Card style={styles.skillsCard}>
-                                <Card.Img src={javaImg} style={styles.smallSkillImage}/>
+                            <Card style={styles.smallSkillsCard}>
+                                <Card.Img src={javaImg} style={styles.smallSkillImage2}/>
                                 <Card.Text>Java</Card.Text>
                             </Card>
-                            <Card style={styles.skillsCard}>
-                                <Card.Img src={androidImg} style={styles.smallSkillImage}/>
+                            <Card style={styles.smallSkillsCard}>
+                                <Card.Img src={androidImg} style={styles.smallSkillImage2}/>
                                 <Card.Text>Android</Card.Text>
                             </Card>
-                            <Card style={styles.skillsCard}>
+                            <Card style={styles.smallSkillsCard}>
                                 <Card.Img src={cImg} style={styles.smallSkillImage}/>
                                 <Card.Text>C</Card.Text>
                             </Card>
-                            <Card style={styles.skillsCard}>
+                            <Card style={styles.smallSkillsCard}>
                                 <Card.Img src={cppImg} style={styles.smallSkillImage}/>
                                 <Card.Text>C++</Card.Text>
                             </Card>
-                            <Card style={styles.skillsCard}>
+                            <Card style={styles.smallSkillsCard}>
                                 <Card.Img src={pythonImg} style={styles.smallSkillImage}/>
                                 <Card.Text>Python</Card.Text>
                             </Card>
-                            <Card style={styles.skillsCard}>
+                            <Card style={styles.smallSkillsCard}>
                                 <Card.Img src={sqlImg} style={styles.smallSkillImage}/>
                                 <Card.Text>SQL</Card.Text>
                             </Card>
-                            <Card style={styles.skillsCard}>
+                            <Card style={styles.smallSkillsCard}>
                                 <Card.Img src={javascriptImg} style={styles.smallSkillImage}/>
                                 <Card.Text>JavaScript</Card.Text>
                             </Card>
-                            <Card style={styles.skillsCard}>
+                            <Card style={styles.smallSkillsCard}>
                                 <Card.Img src={reactImg} style={styles.smallSkillImage}/>
                                 <Card.Text>React</Card.Text>
                             </Card>
