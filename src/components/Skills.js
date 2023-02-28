@@ -56,19 +56,19 @@ const styles = {
         objectFit: 'scale-down',
     },
 
+    smallSkillsCard: {
+        margin: '10px',
+        padding: '20px',
+        objectFit: 'cover',
+        alignItems: 'center',
+    },
+
     smallSkillImage: {
         width: '90%',
         height: '90%',
         alignItems: 'center',
         justifyContent: 'center',
         objectFit: 'scale-down',
-    },
-
-    smallSkillsCard: {
-        margin: '10px',
-        padding: '20px',
-        objectFit: 'cover',
-        alignItems: 'center',
     },
 }
 
