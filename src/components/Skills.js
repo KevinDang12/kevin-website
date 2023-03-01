@@ -22,7 +22,7 @@ const styles = {
         alignItems: 'center',
         justifyContent: 'center',
         color: 'black',
-        backgroundColor: '#ffcfbe',
+        backgroundColor: '#f5b23f',
         zIndex: 1,
         width: '100%',
         maxWidth: '100%',
