@@ -69,6 +69,8 @@ const styles = {
         alignItems: 'center',
         justifyContent: 'center',
         objectFit: 'scale-down',
+        marginTop: '5%',
+        marginBottom: '5%',
     },
 }
 
