@@ -36,6 +36,7 @@ const styles = {
         height: '215px',
         objectFit: 'cover',
         alignItems: 'center',
+        borderRadius: '15px',
     },
 
     cardRow: {
