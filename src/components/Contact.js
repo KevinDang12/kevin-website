@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 import {Parallax} from "react-parallax";
 import MediaQuery from "react-responsive";
 import resume from "../resources/Resume.pdf";
-import contact from "../resources/Contact.jpg";
+import contact from "../resources/Contact.png";
 
 const styles = {
     contact: {
