@@ -75,20 +75,20 @@ class Skills extends Component {
                         <div>
                             <CardGroup style={styles.cardRow}>
                                 <Card style={styles.skillsCard}>
+                                    <Card.Img src={javascriptImg} style={styles.skillImage}/>
+                                    <Card.Text style={styles.text}>JavaScript</Card.Text>
+                                </Card>
+                                <Card style={styles.skillsCard}>
+                                    <Card.Img src={reactImg} style={styles.skillImage}/>
+                                    <Card.Text style={styles.text}>React</Card.Text>
+                                </Card>
+                                <Card style={styles.skillsCard}>
                                     <Card.Img src={javaImg} style={styles.skillImage}/>
                                     <Card.Text style={styles.text}>Java</Card.Text>
                                 </Card>
                                 <Card style={styles.skillsCard}>
                                     <Card.Img src={androidImg} style={styles.skillImage}/>
                                     <Card.Text style={styles.text}>Android</Card.Text>
-                                </Card>
-                                <Card style={styles.skillsCard}>
-                                    <Card.Img src={cImg} style={styles.skillImage}/>
-                                    <Card.Text style={styles.text}>C</Card.Text>
-                                </Card>
-                                <Card style={styles.skillsCard}>
-                                    <Card.Img src={cppImg} style={styles.skillImage}/>
-                                    <Card.Text style={styles.text}>C++</Card.Text>
                                 </Card>
                             </CardGroup>
                         </div>
@@ -100,18 +100,16 @@ class Skills extends Component {
                                     <Card.Text style={styles.text}>Python</Card.Text>
                                 </Card>
                                 <Card style={styles.skillsCard}>
-
                                     <Card.Img src={sqlImg} style={styles.skillImage}/>
                                     <Card.Text style={styles.text}>SQL</Card.Text>
-
                                 </Card>
                                 <Card style={styles.skillsCard}>
-                                    <Card.Img src={javascriptImg} style={styles.skillImage}/>
-                                    <Card.Text style={styles.text}>JavaScript</Card.Text>
+                                    <Card.Img src={cImg} style={styles.skillImage}/>
+                                    <Card.Text style={styles.text}>C</Card.Text>
                                 </Card>
                                 <Card style={styles.skillsCard}>
-                                    <Card.Img src={reactImg} style={styles.skillImage}/>
-                                    <Card.Text style={styles.text}>React</Card.Text>
+                                    <Card.Img src={cppImg} style={styles.skillImage}/>
+                                    <Card.Text style={styles.text}>C++</Card.Text>
                                 </Card>
                             </CardGroup>
                         </div>
@@ -123,20 +121,20 @@ class Skills extends Component {
                         <h1>My Skills</h1>
                         <div style={styles.cardRow}>
                             <Card style={styles.skillsCard}>
+                                <Card.Img src={javascriptImg} style={styles.smallSkillImage}/>
+                                <Card.Text style={styles.text}>JavaScript</Card.Text>
+                            </Card>
+                            <Card style={styles.skillsCard}>
+                                <Card.Img src={reactImg} style={styles.smallSkillImage}/>
+                                <Card.Text style={styles.text}>React</Card.Text>
+                            </Card>
+                            <Card style={styles.skillsCard}>
                                 <Card.Img src={javaImg}/>
                                 <Card.Text style={styles.text}>Java</Card.Text>
                             </Card>
                             <Card style={styles.skillsCard}>
                                 <Card.Img src={androidImg}/>
                                 <Card.Text style={styles.text}>Android</Card.Text>
-                            </Card>
-                            <Card style={styles.skillsCard}>
-                                <Card.Img src={cImg} style={styles.smallSkillImage}/>
-                                <Card.Text style={styles.text}>C</Card.Text>
-                            </Card>
-                            <Card style={styles.skillsCard}>
-                                <Card.Img src={cppImg} style={styles.smallSkillImage}/>
-                                <Card.Text style={styles.text}>C++</Card.Text>
                             </Card>
                             <Card style={styles.skillsCard}>
                                 <Card.Img src={pythonImg} style={styles.smallSkillImage}/>
@@ -147,12 +145,12 @@ class Skills extends Component {
                                 <Card.Text style={styles.text}>SQL</Card.Text>
                             </Card>
                             <Card style={styles.skillsCard}>
-                                <Card.Img src={javascriptImg} style={styles.smallSkillImage}/>
-                                <Card.Text style={styles.text}>JavaScript</Card.Text>
+                                <Card.Img src={cImg} style={styles.smallSkillImage}/>
+                                <Card.Text style={styles.text}>C</Card.Text>
                             </Card>
                             <Card style={styles.skillsCard}>
-                                <Card.Img src={reactImg} style={styles.smallSkillImage}/>
-                                <Card.Text style={styles.text}>React</Card.Text>
+                                <Card.Img src={cppImg} style={styles.smallSkillImage}/>
+                                <Card.Text style={styles.text}>C++</Card.Text>
                             </Card>
                         </div>
                     </div>
