@@ -65,7 +65,7 @@ class About extends Component {
                     </Parallax>
                 </MediaQuery>
 
-                <MediaQuery maxWidth={800}>
+                <MediaQuery maxWidth={799}>
                     <div style={styles.aboutSectionSmall}>
                         <h1>A Brief Summary about Me</h1>
                         <h5>

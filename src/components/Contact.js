@@ -47,7 +47,7 @@ const styles = {
 class Contact extends Component {
     render() {
         return (
-            <div>
+            <div className={"contact"}>
                 <MediaQuery minWidth={800}>
                     <div style={styles.contactSection}>
                         <h1>Contact</h1>
@@ -57,18 +57,18 @@ class Contact extends Component {
                                 <tr>
                                     <td>
                                         <h5>
-                                            <a href="https://github.com/KevinDang12"
+                                            <a data-testid="github" href="https://github.com/KevinDang12"
                                                target="_blank" rel="noreferrer">GitHub</a>
                                         </h5>
                                     </td>
                                     <td>
                                         <h5>
-                                            <a href="https://www.linkedin.com/in/kevin-dang-comptech/"
+                                            <a data-testid="linkedin" href="https://www.linkedin.com/in/kevin-dang-comptech/"
                                                target="_blank" rel="noreferrer">LinkedIn</a>
                                         </h5>
                                     </td>
                                     <td>
-                                        <h5><a href={resume} target="_blank" rel="noreferrer">Resume</a></h5>
+                                        <h5><a data-testid="resume" href={resume} target="_blank" rel="noreferrer">Resume</a></h5>
                                     </td>
                                 </tr>
                             </tbody>
@@ -79,7 +79,7 @@ class Contact extends Component {
                     </Parallax>
                 </MediaQuery>
 
-                <MediaQuery maxWidth={800}>
+                <MediaQuery maxWidth={799}>
                     <div style={styles.contactSectionSmall}>
                         <h1>Contact</h1>
                         <h5>dankevin@sheridancollege.ca</h5>
@@ -88,18 +88,18 @@ class Contact extends Component {
                                 <tr>
                                     <td>
                                         <h5>
-                                            <a href="https://github.com/KevinDang12"
+                                            <a data-testid="github" href="https://github.com/KevinDang12"
                                                target="_blank" rel="noreferrer">GitHub</a>
                                         </h5>
                                     </td>
                                     <td>
                                         <h5>
-                                            <a href="https://www.linkedin.com/in/kevin-dang-comptech/"
+                                            <a data-testid="linkedin" href="https://www.linkedin.com/in/kevin-dang-comptech/"
                                                target="_blank" rel="noreferrer">LinkedIn</a>
                                         </h5>
                                     </td>
                                     <td>
-                                        <h5><a href={resume} target="_blank" rel="noreferrer">Resume</a></h5>
+                                        <h5><a data-testid="resume" href={resume} target="_blank" rel="noreferrer">Resume</a></h5>
                                     </td>
                                 </tr>
                             </tbody>

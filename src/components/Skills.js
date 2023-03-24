@@ -116,7 +116,7 @@ class Skills extends Component {
                     </div>
                 </MediaQuery>
 
-                <MediaQuery maxWidth={800}>
+                <MediaQuery maxWidth={799}>
                     <div style={styles.skillSection}>
                         <h1>My Skills</h1>
                         <div style={styles.cardRow}>

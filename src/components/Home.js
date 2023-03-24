@@ -33,7 +33,7 @@ class Home extends Component {
         return (
             <div style={{background: 'black'}}>
                 <div style={styles.backgroundSection}>
-                    <h1>Hi. I'm Kevin.</h1>
+                    <h1 data-testid="header">Hi. I'm Kevin.</h1>
                     <h2>I’m a Computer Engineering Student.</h2>
                     <h2>You may check out more about me and my projects below.</h2>
                 </div>

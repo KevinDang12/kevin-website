@@ -68,7 +68,7 @@ class Education extends Component {
                         <div style={styles.education}/>
                     </Parallax>
                 </MediaQuery>
-                <MediaQuery maxWidth={800}>
+                <MediaQuery maxWidth={799}>
                     <div style={styles.educationSectionSmall}>
                         <h1>Education</h1>
                         <h2>Sheridan College</h2>

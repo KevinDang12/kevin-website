@@ -77,7 +77,7 @@ class Work extends Component {
                     </Parallax>
                 </MediaQuery>
 
-                <MediaQuery maxWidth={800}>
+                <MediaQuery maxWidth={799}>
                     <div style={styles.workSectionSmall}>
                         <h1>Work Experience</h1>
                         <h2>Teaching Assistant</h2>
