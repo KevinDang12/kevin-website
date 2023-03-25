@@ -48,7 +48,7 @@ class Contact extends Component {
     render() {
         return (
             <div className={"contact"}>
-                <MediaQuery minWidth={800}>
+                <MediaQuery minWidth={769}>
                     <div style={styles.contactSection}>
                         <h1>Contact</h1>
                         <h5>dankevin@sheridancollege.ca</h5>
@@ -79,7 +79,7 @@ class Contact extends Component {
                     </Parallax>
                 </MediaQuery>
 
-                <MediaQuery maxWidth={799}>
+                <MediaQuery maxWidth={768}>
                     <div style={styles.contactSectionSmall}>
                         <h1>Contact</h1>
                         <h5>dankevin@sheridancollege.ca</h5>

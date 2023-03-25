@@ -69,7 +69,7 @@ class Skills extends Component {
     render() {
         return (
             <div>
-                <MediaQuery minWidth={800}>
+                <MediaQuery minWidth={769}>
                     <div style={styles.skillSection}>
                         <h1>My Skills</h1>
                         <div>
@@ -116,7 +116,7 @@ class Skills extends Component {
                     </div>
                 </MediaQuery>
 
-                <MediaQuery maxWidth={799}>
+                <MediaQuery maxWidth={768}>
                     <div style={styles.skillSection}>
                         <h1>My Skills</h1>
                         <div style={styles.cardRow}>

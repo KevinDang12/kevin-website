@@ -48,7 +48,7 @@ class Education extends Component {
     render() {
         return (
             <div>
-                <MediaQuery minWidth={800}>
+                <MediaQuery minWidth={769}>
                     <div style={styles.educationSection}>
                         <h1>Education</h1>
                         <h2>Sheridan College</h2>
@@ -68,7 +68,7 @@ class Education extends Component {
                         <div style={styles.education}/>
                     </Parallax>
                 </MediaQuery>
-                <MediaQuery maxWidth={799}>
+                <MediaQuery maxWidth={768}>
                     <div style={styles.educationSectionSmall}>
                         <h1>Education</h1>
                         <h2>Sheridan College</h2>

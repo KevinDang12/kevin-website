@@ -49,7 +49,7 @@ class About extends Component {
     render() {
         return (
             <div>
-                <MediaQuery minWidth={800}>
+                <MediaQuery minWidth={769}>
                     <div style={styles.aboutSection}>
                         <h1>A Brief Summary about Me</h1>
                         <h5>
@@ -65,7 +65,7 @@ class About extends Component {
                     </Parallax>
                 </MediaQuery>
 
-                <MediaQuery maxWidth={799}>
+                <MediaQuery maxWidth={768}>
                     <div style={styles.aboutSectionSmall}>
                         <h1>A Brief Summary about Me</h1>
                         <h5>

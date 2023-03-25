@@ -50,7 +50,7 @@ class Work extends Component {
     render() {
         return (
             <div>
-                <MediaQuery minWidth={800}>
+                <MediaQuery minWidth={769}>
                     <div style={styles.workSection}>
                         <h1>Work Experience</h1>
                         <h2>Teaching Assistant</h2>
@@ -77,7 +77,7 @@ class Work extends Component {
                     </Parallax>
                 </MediaQuery>
 
-                <MediaQuery maxWidth={799}>
+                <MediaQuery maxWidth={768}>
                     <div style={styles.workSectionSmall}>
                         <h1>Work Experience</h1>
                         <h2>Teaching Assistant</h2>
