@@ -54,7 +54,7 @@ class Projects extends Component {
                             <img src={minesweeper} style={{maxWidth: '100%'}} alt={""}/>
                             <Carousel.Caption style={styles.carouselCaptionStyle}>
                                 <h2>Project #1: Minesweeper</h2>
-                                <MediaQuery minWidth={800}>
+                                <MediaQuery minWidth={769}>
                                     <p>
                                         A minesweeper game created using React and Node.js; it is hosted on AWS.
                                     </p>
@@ -76,7 +76,7 @@ class Projects extends Component {
                             <img src={notepad} style={{maxWidth: '100%'}} alt={""}/>
                             <Carousel.Caption  style={styles.carouselCaptionStyle}>
                                 <h2>Project #2: Notepad</h2>
-                                <MediaQuery minWidth={800}>
+                                <MediaQuery minWidth={769}>
                                     <p>
                                         An Android notepad app for Android devices.
                                         The notepad allows you to create and store multiple
