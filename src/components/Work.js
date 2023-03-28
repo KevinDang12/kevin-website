@@ -1,4 +1,4 @@
-import React, {Component} from 'react';
+import React from 'react';
 import {Parallax} from "react-parallax";
 import MediaQuery from "react-responsive";
 import code from "../resources/code.png";
@@ -46,63 +46,61 @@ const styles = {
     },
 }
 
-class Work extends Component {
-    render() {
-        return (
-            <div>
-                <MediaQuery minWidth={769}>
-                    <div style={styles.workSection}>
-                        <h1>Work Experience</h1>
-                        <h2>Teaching Assistant</h2>
-                        <h2>Sheridan College</h2>
-                        <h2>September - December 2022</h2>
-                        <ul className="text-align">
-                            <li>
-                                TA'd in three courses: Java (Object Oriented Programming), Computer Mathematics,
-                                and front-end web development using HTML, CSS, and JavaScript
-                            </li>
-                            <li>
-                                Assisted students in those courses by answering students' questions during lectures,
-                                group reviews, and one-on-one sessions; hosted tutorials reviewing course concepts
-                            </li>
-                            <li>
-                                Contributed to updating a Time-Management LibGuide on
-                                the official Sheridan College website by adding new content and utilizing
-                                HTML to add new functionality
-                            </li>
-                        </ul>
-                    </div>
-                    <Parallax bgImage={code} strength={450}>
-                        <div style={styles.work}/>
-                    </Parallax>
-                </MediaQuery>
+const Work = () => {
+    return (
+        <div>
+            <MediaQuery minWidth={769}>
+                <div style={styles.workSection}>
+                    <h1 data-testid="workHeader">Work Experience</h1>
+                    <h2>Teaching Assistant</h2>
+                    <h2>Sheridan College</h2>
+                    <h2>September - December 2022</h2>
+                    <ul className="text-align">
+                        <li>
+                            TA'd in three courses: Java (Object Oriented Programming), Computer Mathematics,
+                            and front-end web development using HTML, CSS, and JavaScript
+                        </li>
+                        <li>
+                            Assisted students in those courses by answering students' questions during lectures,
+                            group reviews, and one-on-one sessions; hosted tutorials reviewing course concepts
+                        </li>
+                        <li>
+                            Contributed to updating a Time-Management LibGuide on
+                            the official Sheridan College website by adding new content and utilizing
+                            HTML to add new functionality
+                        </li>
+                    </ul>
+                </div>
+                <Parallax bgImage={code} strength={450}>
+                    <div style={styles.work}/>
+                </Parallax>
+            </MediaQuery>
 
-                <MediaQuery maxWidth={768}>
-                    <div style={styles.workSectionSmall}>
-                        <h1>Work Experience</h1>
-                        <h2>Teaching Assistant</h2>
-                        <h2>Sheridan College</h2>
-                        <h2>September - December 2022</h2>
-                        <ul className="text-align">
-                            <li>
-                                TA'd in three courses: Java (Object Oriented Programming), Computer Mathematics,
-                                and front-end web development using HTML, CSS, and JavaScript
-                            </li>
-                            <li>
-                                Assisted students in those courses by answering students' questions during lectures,
-                                group reviews, and one-on-one sessions; hosted tutorials reviewing course concepts
-                            </li>
-                            <li>
-                                Contributed to updating a Time-Management LibGuide on
-                                the official Sheridan College website by adding new content and utilizing
-                                HTML to add new functionality
-                            </li>
-                        </ul>
-                    </div>
-                </MediaQuery>
-            </div>
-        )
-    }
+            <MediaQuery maxWidth={768}>
+                <div style={styles.workSectionSmall}>
+                    <h1 data-testid="workHeaderMobile">Work Experience</h1>
+                    <h2>Teaching Assistant</h2>
+                    <h2>Sheridan College</h2>
+                    <h2>September - December 2022</h2>
+                    <ul className="text-align">
+                        <li>
+                            TA'd in three courses: Java (Object Oriented Programming), Computer Mathematics,
+                            and front-end web development using HTML, CSS, and JavaScript
+                        </li>
+                        <li>
+                            Assisted students in those courses by answering students' questions during lectures,
+                            group reviews, and one-on-one sessions; hosted tutorials reviewing course concepts
+                        </li>
+                        <li>
+                            Contributed to updating a Time-Management LibGuide on
+                            the official Sheridan College website by adding new content and utilizing
+                            HTML to add new functionality
+                        </li>
+                    </ul>
+                </div>
+            </MediaQuery>
+        </div>
+    )
 }
 
 export default Work;

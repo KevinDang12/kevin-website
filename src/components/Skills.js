@@ -1,4 +1,4 @@
-import React, {Component} from 'react';
+import React from 'react';
 import MediaQuery from "react-responsive";
 import CardGroup from "react-bootstrap/CardGroup";
 import Card from "react-bootstrap/Card";
@@ -65,99 +65,97 @@ const styles = {
     },
 }
 
-class Skills extends Component {
-    render() {
-        return (
-            <div>
-                <MediaQuery minWidth={769}>
-                    <div style={styles.skillSection}>
-                        <h1>My Skills</h1>
-                        <div>
-                            <CardGroup style={styles.cardRow}>
-                                <Card style={styles.skillsCard}>
-                                    <Card.Img src={javascriptImg} style={styles.skillImage}/>
-                                    <Card.Text style={styles.text}>JavaScript</Card.Text>
-                                </Card>
-                                <Card style={styles.skillsCard}>
-                                    <Card.Img src={reactImg} style={styles.skillImage}/>
-                                    <Card.Text style={styles.text}>React</Card.Text>
-                                </Card>
-                                <Card style={styles.skillsCard}>
-                                    <Card.Img src={javaImg} style={styles.skillImage}/>
-                                    <Card.Text style={styles.text}>Java</Card.Text>
-                                </Card>
-                                <Card style={styles.skillsCard}>
-                                    <Card.Img src={androidImg} style={styles.skillImage}/>
-                                    <Card.Text style={styles.text}>Android</Card.Text>
-                                </Card>
-                            </CardGroup>
-                        </div>
-
-                        <div>
-                            <CardGroup style={styles.cardRow}>
-                                <Card style={styles.skillsCard}>
-                                    <Card.Img src={pythonImg} style={styles.skillImage}/>
-                                    <Card.Text style={styles.text}>Python</Card.Text>
-                                </Card>
-                                <Card style={styles.skillsCard}>
-                                    <Card.Img src={sqlImg} style={styles.skillImage}/>
-                                    <Card.Text style={styles.text}>SQL</Card.Text>
-                                </Card>
-                                <Card style={styles.skillsCard}>
-                                    <Card.Img src={cImg} style={styles.skillImage}/>
-                                    <Card.Text style={styles.text}>C</Card.Text>
-                                </Card>
-                                <Card style={styles.skillsCard}>
-                                    <Card.Img src={cppImg} style={styles.skillImage}/>
-                                    <Card.Text style={styles.text}>C++</Card.Text>
-                                </Card>
-                            </CardGroup>
-                        </div>
-                    </div>
-                </MediaQuery>
-
-                <MediaQuery maxWidth={768}>
-                    <div style={styles.skillSection}>
-                        <h1>My Skills</h1>
-                        <div style={styles.cardRow}>
+const Skills = () => {
+    return (
+        <div>
+            <MediaQuery minWidth={769}>
+                <div style={styles.skillSection}>
+                    <h1>My Skills</h1>
+                    <div>
+                        <CardGroup style={styles.cardRow}>
                             <Card style={styles.skillsCard}>
-                                <Card.Img src={javascriptImg} style={styles.smallSkillImage}/>
+                                <Card.Img data-testid="jsImage" src={javascriptImg} style={styles.skillImage}/>
                                 <Card.Text style={styles.text}>JavaScript</Card.Text>
                             </Card>
                             <Card style={styles.skillsCard}>
-                                <Card.Img src={reactImg} style={styles.smallSkillImage}/>
+                                <Card.Img data-testid="reactImage" src={reactImg} style={styles.skillImage}/>
                                 <Card.Text style={styles.text}>React</Card.Text>
                             </Card>
                             <Card style={styles.skillsCard}>
-                                <Card.Img src={javaImg}/>
+                                <Card.Img data-testid="javaImage" src={javaImg} style={styles.skillImage}/>
                                 <Card.Text style={styles.text}>Java</Card.Text>
                             </Card>
                             <Card style={styles.skillsCard}>
-                                <Card.Img src={androidImg}/>
+                                <Card.Img data-testid="androidImage" src={androidImg} style={styles.skillImage}/>
                                 <Card.Text style={styles.text}>Android</Card.Text>
                             </Card>
+                        </CardGroup>
+                    </div>
+
+                    <div>
+                        <CardGroup style={styles.cardRow}>
                             <Card style={styles.skillsCard}>
-                                <Card.Img src={pythonImg} style={styles.smallSkillImage}/>
+                                <Card.Img data-testid="pythonImage" src={pythonImg} style={styles.skillImage}/>
                                 <Card.Text style={styles.text}>Python</Card.Text>
                             </Card>
                             <Card style={styles.skillsCard}>
-                                <Card.Img src={sqlImg} style={styles.smallSkillImage}/>
+                                <Card.Img data-testid="sqlImage" src={sqlImg} style={styles.skillImage}/>
                                 <Card.Text style={styles.text}>SQL</Card.Text>
                             </Card>
                             <Card style={styles.skillsCard}>
-                                <Card.Img src={cImg} style={styles.smallSkillImage}/>
+                                <Card.Img data-testid="cImage" src={cImg} style={styles.skillImage}/>
                                 <Card.Text style={styles.text}>C</Card.Text>
                             </Card>
                             <Card style={styles.skillsCard}>
-                                <Card.Img src={cppImg} style={styles.smallSkillImage}/>
+                                <Card.Img data-testid="cppImage" src={cppImg} style={styles.skillImage}/>
                                 <Card.Text style={styles.text}>C++</Card.Text>
                             </Card>
-                        </div>
+                        </CardGroup>
                     </div>
-                </MediaQuery>
-            </div>
-        )
-    }
+                </div>
+            </MediaQuery>
+
+            <MediaQuery maxWidth={768}>
+                <div style={styles.skillSection}>
+                    <h1>My Skills</h1>
+                    <div style={styles.cardRow}>
+                        <Card style={styles.skillsCard}>
+                            <Card.Img data-testid="jsImageMobile" src={javascriptImg} style={styles.smallSkillImage}/>
+                            <Card.Text style={styles.text}>JavaScript</Card.Text>
+                        </Card>
+                        <Card style={styles.skillsCard}>
+                            <Card.Img data-testid="reactImageMobile" src={reactImg} style={styles.smallSkillImage}/>
+                            <Card.Text style={styles.text}>React</Card.Text>
+                        </Card>
+                        <Card style={styles.skillsCard}>
+                            <Card.Img data-testid="javaImageMobile" src={javaImg}/>
+                            <Card.Text style={styles.text}>Java</Card.Text>
+                        </Card>
+                        <Card style={styles.skillsCard}>
+                            <Card.Img data-testid="androidImageMobile" src={androidImg}/>
+                            <Card.Text style={styles.text}>Android</Card.Text>
+                        </Card>
+                        <Card style={styles.skillsCard}>
+                            <Card.Img data-testid="pythonImageMobile" src={pythonImg} style={styles.smallSkillImage}/>
+                            <Card.Text style={styles.text}>Python</Card.Text>
+                        </Card>
+                        <Card style={styles.skillsCard}>
+                            <Card.Img data-testid="sqlImageMobile" src={sqlImg} style={styles.smallSkillImage}/>
+                            <Card.Text style={styles.text}>SQL</Card.Text>
+                        </Card>
+                        <Card style={styles.skillsCard}>
+                            <Card.Img data-testid="cImageMobile" src={cImg} style={styles.smallSkillImage}/>
+                            <Card.Text style={styles.text}>C</Card.Text>
+                        </Card>
+                        <Card style={styles.skillsCard}>
+                            <Card.Img data-testid="cppImageMobile" src={cppImg} style={styles.smallSkillImage}/>
+                            <Card.Text style={styles.text}>C++</Card.Text>
+                        </Card>
+                    </div>
+                </div>
+            </MediaQuery>
+        </div>
+    )
 }
 
 export default Skills;
