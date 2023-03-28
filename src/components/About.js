@@ -1,4 +1,4 @@
-import React, {Component} from 'react';
+import React from 'react';
 import {Parallax} from "react-parallax";
 import MediaQuery from "react-responsive";
 import about from "../resources/About.jpg";
@@ -45,41 +45,39 @@ const styles = {
     },
 }
 
-class About extends Component {
-    render() {
-        return (
-            <div>
-                <MediaQuery minWidth={769}>
-                    <div style={styles.aboutSection}>
-                        <h1>A Brief Summary about Me</h1>
-                        <h5>
-                            My name is Kevin Dang, I am currently
-                            a third-year Computer Engineering Technology
-                            student. I have had an interest in working
-                            with computers for a long time and it has led me
-                            to have a passion for programming.
-                        </h5>
-                    </div>
-                    <Parallax blur={{min: -5, max: 5}} bgImage={about} strength={200}>
-                        <div style={styles.about}/>
-                    </Parallax>
-                </MediaQuery>
+const About = () => {
+    return (
+        <div>
+            <MediaQuery minWidth={769}>
+                <div style={styles.aboutSection}>
+                    <h1 data-testid="aboutHeader">A Brief Summary about Me</h1>
+                    <h5>
+                        My name is Kevin Dang, I am currently
+                        a third-year Computer Engineering Technology
+                        student. I have had an interest in working
+                        with computers for a long time and it has led me
+                        to have a passion for programming.
+                    </h5>
+                </div>
+                <Parallax blur={{min: -5, max: 5}} bgImage={about} strength={200}>
+                    <div style={styles.about}/>
+                </Parallax>
+            </MediaQuery>
 
-                <MediaQuery maxWidth={768}>
-                    <div style={styles.aboutSectionSmall}>
-                        <h1>A Brief Summary about Me</h1>
-                        <h5>
-                            My name is Kevin Dang, I am currently
-                            a third-year Computer Engineering Technology
-                            student. I have had an interest in working
-                            with computers for a long time and it has led me
-                            to have a passion for programming.
-                        </h5>
-                    </div>
-                </MediaQuery>
-            </div>
-        )
-    }
+            <MediaQuery maxWidth={768}>
+                <div style={styles.aboutSectionSmall}>
+                    <h1 data-testid="aboutHeaderMobile">A Brief Summary about Me</h1>
+                    <h5>
+                        My name is Kevin Dang, I am currently
+                        a third-year Computer Engineering Technology
+                        student. I have had an interest in working
+                        with computers for a long time and it has led me
+                        to have a passion for programming.
+                    </h5>
+                </div>
+            </MediaQuery>
+        </div>
+    )
 }
 
 export default About;

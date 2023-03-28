@@ -1,5 +1,5 @@
 import './App.css';
-import React, {Component} from 'react';
+import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Home from './components/Home';
 import About from './components/About';
@@ -40,35 +40,33 @@ const styles = {
     },
 }
 
-class App extends Component {
-    render() {
-        return (
-            <div>
-                <Home/>
+const App = () => {
+    return (
+        <div>
+            <Home/>
 
-                <div style={styles.dividerWhite}/>
-                <About/>
-                <div style={styles.dividerWhite}/>
+            <div style={styles.dividerWhite}/>
+            <About/>
+            <div style={styles.dividerWhite}/>
 
-                <div style={styles.dividerLightBlue}/>
-                <Work/>
-                <div style={styles.dividerLightBlue}/>
+            <div style={styles.dividerLightBlue}/>
+            <Work/>
+            <div style={styles.dividerLightBlue}/>
 
-                <Skills/>
+            <Skills/>
 
-                <div style={styles.dividerGray}/>
-                <Projects/>
-                <div style={styles.dividerGray}/>
+            <div style={styles.dividerGray}/>
+            <Projects/>
+            <div style={styles.dividerGray}/>
 
-                <div style={styles.dividerBlue}/>
-                <Education/>
-                <div style={styles.dividerBlue}/>
+            <div style={styles.dividerBlue}/>
+            <Education/>
+            <div style={styles.dividerBlue}/>
 
-                <div style={styles.dividerPurple}/>
-                <Contact/>
-            </div>
-        );
-    }
+            <div style={styles.dividerPurple}/>
+            <Contact/>
+        </div>
+    );
 }
 
 export default App;

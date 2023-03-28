@@ -1,4 +1,4 @@
-import React, {Component} from 'react';
+import React from 'react';
 import {Parallax} from "react-parallax";
 import keyboard from "../resources/background.jpg";
 
@@ -28,21 +28,19 @@ const styles = {
     }
 }
 
-class Home extends Component {
-    render() {
-        return (
-            <div style={{background: 'black'}}>
-                <div style={styles.backgroundSection}>
-                    <h1 data-testid="header">Hi. I'm Kevin.</h1>
-                    <h2>I’m a Computer Engineering Student.</h2>
-                    <h2>You may check out more about me and my projects below.</h2>
-                </div>
-                <Parallax blur={{min: -20, max: 20}} bgImage={keyboard}>
-                    <div style={styles.background}/>
-                </Parallax>
+const Home = () => {
+    return (
+        <div style={{background: 'black'}}>
+            <div style={styles.backgroundSection}>
+                <h1 data-testid="header">Hi. I'm Kevin.</h1>
+                <h2>I’m a Computer Engineering Student.</h2>
+                <h2>You may check out more about me and my projects below.</h2>
             </div>
-        )
-    }
+            <Parallax blur={{min: -20, max: 20}} bgImage={keyboard}>
+                <div style={styles.background}/>
+            </Parallax>
+        </div>
+    )
 }
 
 export default Home;

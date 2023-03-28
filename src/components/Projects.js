@@ -53,29 +53,27 @@ class Projects extends Component {
                         <Carousel.Item interval={8000}>
                             <img src={minesweeper} style={{maxWidth: '100%'}} alt={""}/>
                             <Carousel.Caption style={styles.carouselCaptionStyle}>
-                                <h2>Project #1: Minesweeper</h2>
+                                <h2 data-testid={"minesweeper"}>Project #1: Minesweeper</h2>
                                 <MediaQuery minWidth={769}>
                                     <p>
                                         A minesweeper game created using React and Node.js; it is hosted on AWS.
                                     </p>
-                                    <p>
+                                    <p data-testid={"para"}>
                                         It also includes a backend server
                                         that allows users to save their
                                         minesweeper games and access it on different devices.
                                     </p>
-                                    <p>
-                                        You can find the minesweeper web game <a href="http://www.kevindang12.com/minesweeper"
-                                                                                 target="_blank" rel="noreferrer">here
-                                    </a>.
-                                    </p>
                                 </MediaQuery>
+                                <p>
+                                    You can find the minesweeper web game <a data-testid={"minesweeperlink"} href="http://www.kevindang12.com/minesweeper" target="_blank" rel="noreferrer">here</a>.
+                                </p>
                             </Carousel.Caption>
                         </Carousel.Item>
 
                         <Carousel.Item interval={8000}>
                             <img src={notepad} style={{maxWidth: '100%'}} alt={""}/>
                             <Carousel.Caption  style={styles.carouselCaptionStyle}>
-                                <h2>Project #2: Notepad</h2>
+                                <h2 data-testid={"notepad"}>Project #2: Notepad</h2>
                                 <MediaQuery minWidth={769}>
                                     <p>
                                         An Android notepad app for Android devices.
