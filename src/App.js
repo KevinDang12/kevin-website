@@ -40,7 +40,7 @@ const styles = {
     },
 }
 
-const App = () => {
+function App() {
     return (
         <div>
             <Home/>

@@ -45,7 +45,7 @@ const styles = {
     },
 }
 
-const About = () => {
+export default function About() {
     return (
         <div>
             <MediaQuery minWidth={769}>
@@ -79,5 +79,3 @@ const About = () => {
         </div>
     )
 }
-
-export default About;

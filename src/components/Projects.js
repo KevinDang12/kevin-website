@@ -42,56 +42,52 @@ const styles = {
     }
 }
 
-class Projects extends Component {
-    render() {
-        return (
-            <div>
-                <div style={styles.projectSection}>
-                    <h1 style={{paddingBottom: "20px"}}>Projects</h1>
+export default function Projects() {
+    return (
+        <div>
+            <div style={styles.projectSection}>
+                <h1 style={{paddingBottom: "20px"}}>Projects</h1>
 
-                    <Carousel variant="dark" height={700} style={{width: '100%'}}>
-                        <Carousel.Item interval={8000}>
-                            <img src={minesweeper} style={{maxWidth: '100%'}} alt={""}/>
-                            <Carousel.Caption style={styles.carouselCaptionStyle}>
-                                <h2 data-testid={"minesweeper"}>Project #1: Minesweeper</h2>
-                                <MediaQuery minWidth={769}>
-                                    <p>
-                                        A minesweeper game created using React and Node.js; it is hosted on AWS.
-                                    </p>
-                                    <p data-testid={"para"}>
-                                        It also includes a backend server
-                                        that allows users to save their
-                                        minesweeper games and access it on different devices.
-                                    </p>
-                                </MediaQuery>
+                <Carousel variant="dark" height={700} style={{width: '100%'}}>
+                    <Carousel.Item interval={8000}>
+                        <img src={minesweeper} style={{maxWidth: '100%'}} alt={""}/>
+                        <Carousel.Caption style={styles.carouselCaptionStyle}>
+                            <h2 data-testid={"minesweeper"}>Project #1: Minesweeper</h2>
+                            <MediaQuery minWidth={769}>
                                 <p>
-                                    You can find the minesweeper web game <a data-testid={"minesweeperlink"} href="http://www.kevindang12.com/minesweeper" target="_blank" rel="noreferrer">here</a>.
+                                    A minesweeper game created using React and Node.js; it is hosted on AWS.
                                 </p>
-                            </Carousel.Caption>
-                        </Carousel.Item>
+                                <p data-testid={"para"}>
+                                    It also includes a backend server
+                                    that allows users to save their
+                                    minesweeper games and access it on different devices.
+                                </p>
+                            </MediaQuery>
+                            <p>
+                                You can find the minesweeper web game <a data-testid={"minesweeperlink"} href="http://www.kevindang12.com/minesweeper" target="_blank" rel="noreferrer">here</a>.
+                            </p>
+                        </Carousel.Caption>
+                    </Carousel.Item>
 
-                        <Carousel.Item interval={8000}>
-                            <img src={notepad} style={{maxWidth: '100%'}} alt={""}/>
-                            <Carousel.Caption  style={styles.carouselCaptionStyle}>
-                                <h2 data-testid={"notepad"}>Project #2: Notepad</h2>
-                                <MediaQuery minWidth={769}>
-                                    <p>
-                                        An Android notepad app for Android devices.
-                                        The notepad allows you to create and store multiple
-                                        notes.
-                                    </p>
-                                    <p>
-                                        Each note is encrypted with a password, a
-                                        password is required to decrypt each note.
-                                    </p>
-                                </MediaQuery>
-                            </Carousel.Caption>
-                        </Carousel.Item>
-                    </Carousel>
-                </div>
+                    <Carousel.Item interval={8000}>
+                        <img src={notepad} style={{maxWidth: '100%'}} alt={""}/>
+                        <Carousel.Caption  style={styles.carouselCaptionStyle}>
+                            <h2 data-testid={"notepad"}>Project #2: Notepad</h2>
+                            <MediaQuery minWidth={769}>
+                                <p>
+                                    An Android notepad app for Android devices.
+                                    The notepad allows you to create and store multiple
+                                    notes.
+                                </p>
+                                <p>
+                                    Each note is encrypted with a password, a
+                                    password is required to decrypt each note.
+                                </p>
+                            </MediaQuery>
+                        </Carousel.Caption>
+                    </Carousel.Item>
+                </Carousel>
             </div>
-        )
-    }
+        </div>
+    )
 }
-
-export default Projects;

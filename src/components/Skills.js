@@ -65,7 +65,7 @@ const styles = {
     },
 }
 
-const Skills = () => {
+export default function Skills() {
     return (
         <div>
             <MediaQuery minWidth={769}>
@@ -157,5 +157,3 @@ const Skills = () => {
         </div>
     )
 }
-
-export default Skills;

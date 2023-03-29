@@ -44,7 +44,7 @@ const styles = {
     },
 }
 
-const Contact = () => {
+export default function Contact() {
     return (
         <div className={"contact"}>
             <MediaQuery minWidth={769}>
@@ -108,5 +108,3 @@ const Contact = () => {
         </div>
     )
 }
-
-export default Contact;

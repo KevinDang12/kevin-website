@@ -28,7 +28,7 @@ const styles = {
     }
 }
 
-const Home = () => {
+export default function Home() {
     return (
         <div style={{background: 'black'}}>
             <div style={styles.backgroundSection}>
@@ -42,5 +42,3 @@ const Home = () => {
         </div>
     )
 }
-
-export default Home;
