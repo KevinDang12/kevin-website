@@ -5,7 +5,6 @@ import notepad from '../resources/Notepad.jpg';
 import minesweeper from '../resources/Minesweeper.jpg';
 
 const styles = {
-
   project: {
     position: 'absolute',
     margin: '0px',
@@ -70,7 +69,13 @@ export default function Projects() {
                 </p>
               </MediaQuery>
               <p>
-                                You can find the minesweeper web game <a data-testid={'minesweeperlink'} href="http://www.kevindang12.com/minesweeper" target="_blank" rel="noreferrer">here</a>.
+                You can find the minesweeper web game <a
+                  data-testid={'minesweeperlink'}
+                  href="http://www.kevindang12.com/minesweeper"
+                  target="_blank"
+                  rel="noreferrer">
+                  here
+                </a>.
               </p>
             </Carousel.Caption>
           </Carousel.Item>
