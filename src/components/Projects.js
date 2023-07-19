@@ -3,6 +3,7 @@ import MediaQuery from 'react-responsive';
 import Carousel from 'react-bootstrap/Carousel';
 import notepad from '../resources/Notepad.jpg';
 import minesweeper from '../resources/Minesweeper.jpg';
+import * as projectsText from './text/projectsText';
 
 const styles = {
   project: {
@@ -49,33 +50,26 @@ export default function Projects() {
   return (
     <div>
       <div style={styles.projectSection}>
-        <h1 style={{paddingBottom: '20px'}}>Projects</h1>
+        <h1 style={{paddingBottom: '20px'}}>{projectsText.TITLE}</h1>
 
         <Carousel variant="dark" height={700} style={{width: '100%'}}>
           <Carousel.Item interval={8000}>
             <img src={minesweeper} style={{maxWidth: '100%'}} alt={''}/>
             <Carousel.Caption style={styles.carouselCaptionStyle}>
-              <h2 data-testid={'minesweeper'}>Project #1: Minesweeper</h2>
+              <h2 data-testid={'minesweeper'}>{projectsText.PROJECT_ONE}</h2>
               <MediaQuery minWidth={769}>
-                <p>
-                    A minesweeper game created using
-                    React and Node.js; it is hosted on AWS.
-                </p>
-                <p data-testid={'para'}>
-                    It also includes a backend server
-                    that allows users to save their
-                    minesweeper games and access it
-                    on different devices.
-                </p>
+                {projectsText.DESCRIPTION_ONE.map((item, index) => (
+                  <p key={index}>{item}</p>
+                ))}
               </MediaQuery>
               <p>
-                You can find the minesweeper web game <a
+                {projectsText.LOCATE_MINESWEEPER}<a
                   data-testid={'minesweeperlink'}
-                  href="http://www.kevindang12.com/minesweeper"
+                  href={projectsText.LINK}
                   target="_blank"
                   rel="noreferrer">
-                  here
-                </a>.
+                  {projectsText.HERE}
+                </a>
               </p>
             </Carousel.Caption>
           </Carousel.Item>
@@ -83,17 +77,11 @@ export default function Projects() {
           <Carousel.Item interval={8000}>
             <img src={notepad} style={{maxWidth: '100%'}} alt={''}/>
             <Carousel.Caption style={styles.carouselCaptionStyle}>
-              <h2 data-testid={'notepad'}>Project #2: Notepad</h2>
+              <h2 data-testid={'notepad'}>{projectsText.PROJECT_TWO}</h2>
               <MediaQuery minWidth={769}>
-                <p>
-                    An Android notepad app for Android devices.
-                    The notepad allows you to create
-                    and store multiple notes.
-                </p>
-                <p>
-                    Each note is encrypted with a password, a
-                    password is required to decrypt each note.
-                </p>
+                {projectsText.DESCRIPTION_TWO.map((item, index) => (
+                  <p key={index}>{item}</p>
+                ))}
               </MediaQuery>
             </Carousel.Caption>
           </Carousel.Item>
