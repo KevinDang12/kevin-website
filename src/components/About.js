@@ -2,6 +2,7 @@ import React from 'react';
 import {Parallax} from 'react-parallax';
 import MediaQuery from 'react-responsive';
 import about from '../resources/About.jpg';
+import * as aboutText from './text/aboutText';
 
 const styles = {
   about: {
@@ -54,14 +55,8 @@ export default function About() {
     <div>
       <MediaQuery minWidth={769}>
         <div style={styles.aboutSection}>
-          <h1 data-testid="aboutHeader">A Brief Summary about Me</h1>
-          <h5>
-            My name is Kevin Dang, I am currently
-            a third-year Computer Engineering Technology
-            student. I have had an interest in working
-            with computers for a long time and it has led me
-            to have a passion for programming.
-          </h5>
+          <h1 data-testid="aboutHeader">{aboutText.ABOUT_HEADER}</h1>
+          <h5>{aboutText.ABOUT_PARAGRAPH_ONE}</h5>
         </div>
         <Parallax blur={{min: -5, max: 5}} bgImage={about} strength={200}>
           <div style={styles.about}/>
@@ -70,14 +65,8 @@ export default function About() {
 
       <MediaQuery maxWidth={768}>
         <div style={styles.aboutSectionSmall}>
-          <h1 data-testid="aboutHeaderMobile">A Brief Summary about Me</h1>
-          <h5>
-            My name is Kevin Dang, I am currently
-            a third-year Computer Engineering Technology
-            student. I have had an interest in working
-            with computers for a long time and it has led me
-            to have a passion for programming.
-          </h5>
+          <h1 data-testid="aboutHeaderMobile">{aboutText.ABOUT_HEADER}</h1>
+          <h5>{aboutText.ABOUT_PARAGRAPH_ONE}</h5>
         </div>
       </MediaQuery>
     </div>

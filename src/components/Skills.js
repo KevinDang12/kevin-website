@@ -10,6 +10,7 @@ import pythonImg from '../resources/Python.png';
 import sqlImg from '../resources/SQL.png';
 import javascriptImg from '../resources/Javascript.png';
 import reactImg from '../resources/React.png';
+import * as skillsText from './text/skillsText';
 
 const styles = {
   skillSection: {
@@ -74,7 +75,7 @@ export default function Skills() {
     <div>
       <MediaQuery minWidth={769}>
         <div style={styles.skillSection}>
-          <h1>My Skills</h1>
+          <h1>{skillsText.HEADER}</h1>
           <div>
             <CardGroup style={styles.cardRow}>
               <Card style={styles.skillsCard}>
@@ -83,7 +84,7 @@ export default function Skills() {
                   src={javascriptImg}
                   style={styles.skillImage}
                 />
-                <Card.Text style={styles.text}>JavaScript</Card.Text>
+                <Card.Text style={styles.text}>{skillsText.JS}</Card.Text>
               </Card>
               <Card style={styles.skillsCard}>
                 <Card.Img
@@ -91,7 +92,7 @@ export default function Skills() {
                   src={reactImg}
                   style={styles.skillImage}
                 />
-                <Card.Text style={styles.text}>React</Card.Text>
+                <Card.Text style={styles.text}>{skillsText.REACT}</Card.Text>
               </Card>
               <Card style={styles.skillsCard}>
                 <Card.Img
@@ -99,7 +100,7 @@ export default function Skills() {
                   src={javaImg}
                   style={styles.skillImage}
                 />
-                <Card.Text style={styles.text}>Java</Card.Text>
+                <Card.Text style={styles.text}>{skillsText.JAVA}</Card.Text>
               </Card>
               <Card style={styles.skillsCard}>
                 <Card.Img
@@ -107,7 +108,7 @@ export default function Skills() {
                   src={androidImg}
                   style={styles.skillImage}
                 />
-                <Card.Text style={styles.text}>Android</Card.Text>
+                <Card.Text style={styles.text}>{skillsText.ANDROID}</Card.Text>
               </Card>
             </CardGroup>
           </div>
@@ -120,7 +121,7 @@ export default function Skills() {
                   src={pythonImg}
                   style={styles.skillImage}
                 />
-                <Card.Text style={styles.text}>Python</Card.Text>
+                <Card.Text style={styles.text}>{skillsText.PYTHON}</Card.Text>
               </Card>
               <Card style={styles.skillsCard}>
                 <Card.Img
@@ -128,7 +129,7 @@ export default function Skills() {
                   src={sqlImg}
                   style={styles.skillImage}
                 />
-                <Card.Text style={styles.text}>SQL</Card.Text>
+                <Card.Text style={styles.text}>{skillsText.SQL}</Card.Text>
               </Card>
               <Card style={styles.skillsCard}>
                 <Card.Img
@@ -136,7 +137,7 @@ export default function Skills() {
                   src={cImg}
                   style={styles.skillImage}
                 />
-                <Card.Text style={styles.text}>C</Card.Text>
+                <Card.Text style={styles.text}>{skillsText.C}</Card.Text>
               </Card>
               <Card style={styles.skillsCard}>
                 <Card.Img
@@ -144,7 +145,7 @@ export default function Skills() {
                   src={cppImg}
                   style={styles.skillImage}
                 />
-                <Card.Text style={styles.text}>C++</Card.Text>
+                <Card.Text style={styles.text}>{skillsText.CPP}</Card.Text>
               </Card>
             </CardGroup>
           </div>
@@ -153,7 +154,7 @@ export default function Skills() {
 
       <MediaQuery maxWidth={768}>
         <div style={styles.skillSection}>
-          <h1>My Skills</h1>
+          <h1>{skillsText.HEADER}</h1>
           <div style={styles.cardRow}>
             <Card style={styles.skillsCard}>
               <Card.Img
@@ -161,7 +162,7 @@ export default function Skills() {
                 src={javascriptImg}
                 style={styles.smallSkillImage}
               />
-              <Card.Text style={styles.text}>JavaScript</Card.Text>
+              <Card.Text style={styles.text}>{skillsText.JS}</Card.Text>
             </Card>
             <Card style={styles.skillsCard}>
               <Card.Img
@@ -169,22 +170,22 @@ export default function Skills() {
                 src={reactImg}
                 style={styles.smallSkillImage}
               />
-              <Card.Text style={styles.text}>React</Card.Text>
+              <Card.Text style={styles.text}>{skillsText.REACT}</Card.Text>
             </Card>
             <Card style={styles.skillsCard}>
               <Card.Img data-testid="javaImageMobile" src={javaImg}/>
-              <Card.Text style={styles.text}>Java</Card.Text>
+              <Card.Text style={styles.text}>{skillsText.JAVA}</Card.Text>
             </Card>
             <Card style={styles.skillsCard}>
               <Card.Img data-testid="androidImageMobile" src={androidImg}/>
-              <Card.Text style={styles.text}>Android</Card.Text>
+              <Card.Text style={styles.text}>{skillsText.ANDROID}</Card.Text>
             </Card>
             <Card style={styles.skillsCard}>
               <Card.Img
                 data-testid="pythonImageMobile"
                 src={pythonImg}
                 style={styles.smallSkillImage}/>
-              <Card.Text style={styles.text}>Python</Card.Text>
+              <Card.Text style={styles.text}>{skillsText.PYTHON}</Card.Text>
             </Card>
             <Card style={styles.skillsCard}>
               <Card.Img
@@ -192,7 +193,7 @@ export default function Skills() {
                 src={sqlImg}
                 style={styles.smallSkillImage}
               />
-              <Card.Text style={styles.text}>SQL</Card.Text>
+              <Card.Text style={styles.text}>{skillsText.SQL}</Card.Text>
             </Card>
             <Card style={styles.skillsCard}>
               <Card.Img
@@ -200,7 +201,7 @@ export default function Skills() {
                 src={cImg}
                 style={styles.smallSkillImage}
               />
-              <Card.Text style={styles.text}>C</Card.Text>
+              <Card.Text style={styles.text}>{skillsText.C}</Card.Text>
             </Card>
             <Card style={styles.skillsCard}>
               <Card.Img
@@ -208,7 +209,7 @@ export default function Skills() {
                 src={cppImg}
                 style={styles.smallSkillImage}
               />
-              <Card.Text style={styles.text}>C++</Card.Text>
+              <Card.Text style={styles.text}>{skillsText.CPP}</Card.Text>
             </Card>
           </div>
         </div>

@@ -2,6 +2,7 @@ import React from 'react';
 import {Parallax} from 'react-parallax';
 import MediaQuery from 'react-responsive';
 import education from '../resources/Education.jpg';
+import * as educationText from './text/educationText';
 
 const styles = {
   education: {
@@ -53,19 +54,14 @@ export default function Education() {
     <div>
       <MediaQuery minWidth={769}>
         <div style={styles.educationSection}>
-          <h1 data-testid="educationHeader">Education</h1>
-          <h2>Sheridan College</h2>
-          <p>
-                        I am currently a third-year Computer Engineering
-                        Technology student at Sheridan College.
-          </p>
-          <p>2020 - Present</p>
-          <h3>Relevant Courses</h3>
-          <p>C Programming</p>
-          <p>Computer Architecture</p>
-          <p>Database Design and Implementation</p>
-          <p>Java Programming</p>
-          <p>Linux/Unix Operating Systems</p>
+          <h1 data-testid="educationHeader">{educationText.TITLE}</h1>
+          <h2>{educationText.SCHOOL}</h2>
+          <p>{educationText.DESCRIPTION}</p>
+          <p>{educationText.DURATION}</p>
+          <h3>{educationText.COURSES}</h3>
+          {educationText.COURSE_LIST.map((course, index) => (
+            <p key={index}>{course}</p>
+          ))}
         </div>
         <Parallax bgImage={education} strength={-300}>
           <div style={styles.education}/>
@@ -73,19 +69,14 @@ export default function Education() {
       </MediaQuery>
       <MediaQuery maxWidth={768}>
         <div style={styles.educationSectionSmall}>
-          <h1 data-testid="educationHeaderMobile">Education</h1>
-          <h2>Sheridan College</h2>
-          <p>
-                        I am currently a third-year Computer Engineering
-                        Technology student at Sheridan College.
-          </p>
-          <p>2020 - Present</p>
-          <h3>Relevant Courses</h3>
-          <p>C Programming</p>
-          <p>Computer Architecture</p>
-          <p>Database Design and Implementation</p>
-          <p>Java Programming</p>
-          <p>Linux/Unix Operating Systems</p>
+          <h1 data-testid="educationHeaderMobile">{educationText.TITLE}</h1>
+          <h2>{educationText.SCHOOL}</h2>
+          <p>{educationText.DESCRIPTION}</p>
+          <p>{educationText.DURATION}</p>
+          <h3>{educationText.COURSES}</h3>
+          {educationText.COURSE_LIST.map((course, index) => (
+            <p key={index}>{course}</p>
+          ))}
         </div>
       </MediaQuery>
     </div>

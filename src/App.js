@@ -1,9 +1,11 @@
 import './App.css';
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import Header from './components/Navbar';
 import Home from './components/Home';
 import About from './components/About';
-import Work from './components/Work';
+import Teach from './components/Teach';
+import Research from './components/Research';
 import Skills from './components/Skills';
 import Projects from './components/Projects';
 import Education from './components/Education';
@@ -24,12 +26,18 @@ const styles = {
   dividerGray: {
     width: '100%',
     backgroundColor: '#cdcdcd',
-    height: '50px',
+    height: '100px',
   },
 
   dividerLightBlue: {
     width: '100%',
     backgroundColor: '#9fdcdc',
+    height: '50px',
+  },
+
+  dividerLightGreen: {
+    width: '100%',
+    backgroundColor: '#90ee90',
     height: '50px',
   },
 
@@ -47,28 +55,57 @@ const styles = {
 function App() {
   return (
     <div>
-      <Home/>
+      <Header/>
+
+      <section id="home">
+        <Home/>
+      </section>
 
       <div style={styles.dividerWhite}/>
-      <About/>
+
+      <section id="about">
+        <About/>
+      </section>
+
       <div style={styles.dividerWhite}/>
 
+      <div style={styles.dividerLightGreen}/>
+
+      <section id="work">
+        <Research/>
+      </section>
+
+      <div style={styles.dividerLightGreen}/>
+
       <div style={styles.dividerLightBlue}/>
-      <Work/>
+      <Teach/>
       <div style={styles.dividerLightBlue}/>
 
-      <Skills/>
+      <section id="skills">
+        <Skills/>
+      </section>
 
-      <div style={styles.dividerGray}/>
+      <section id="projects">
+        <div style={styles.dividerGray}/>
+      </section>
+
       <Projects/>
+
       <div style={styles.dividerGray}/>
 
       <div style={styles.dividerBlue}/>
-      <Education/>
+
+      <section id="education">
+        <Education/>
+      </section>
+
       <div style={styles.dividerBlue}/>
 
       <div style={styles.dividerPurple}/>
-      <Contact/>
+
+      <section id="contact">
+        <Contact/>
+      </section>
     </div>
   );
 }

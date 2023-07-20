@@ -1,6 +1,7 @@
 import React from 'react';
 import {Parallax} from 'react-parallax';
 import keyboard from '../resources/background.jpg';
+import * as homeText from './text/homeText';
 
 const styles = {
   background: {
@@ -36,9 +37,9 @@ export default function Home() {
   return (
     <div style={{background: 'black'}}>
       <div style={styles.backgroundSection}>
-        <h1 data-testid="header">Hi. I&apos;m Kevin.</h1>
-        <h2>I&apos;m a Computer Engineering Student.</h2>
-        <h2>You may check out more about me and my projects below.</h2>
+        <h1 data-testid="header">{homeText.HOME_HEADER}</h1>
+        <h2>{homeText.HOME_SUBHEADER}</h2>
+        <h2>{homeText.HOME_DESCRIPTION}</h2>
       </div>
       <Parallax blur={{min: -20, max: 20}} bgImage={keyboard}>
         <div style={styles.background}/>
