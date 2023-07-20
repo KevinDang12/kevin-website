@@ -1,16 +1,17 @@
 {
   "files": {
-    "main.css": "/kevin-website/static/css/main.dce7e6dc.css",
-    "main.js": "/kevin-website/static/js/main.a0e219a0.js",
+    "main.css": "/kevin-website/static/css/main.633863fb.css",
+    "main.js": "/kevin-website/static/js/main.637eb851.js",
     "static/js/496.eb711711.chunk.js": "/kevin-website/static/js/496.eb711711.chunk.js",
-    "static/media/Contact.png": "/kevin-website/static/media/Contact.12460383d3c5360cdf28.png",
+    "static/media/Contact.png": "/kevin-website/static/media/Contact.42f35a0e2d0ac5e1a007.png",
     "static/media/Education.jpg": "/kevin-website/static/media/Education.26055749edea0e559226.jpg",
     "static/media/About.jpg": "/kevin-website/static/media/About.88f5ac23c59fb2a5df45.jpg",
     "static/media/code.png": "/kevin-website/static/media/code.a6851e4f1c0797d35ca3.png",
     "static/media/background.jpg": "/kevin-website/static/media/background.66f8317dc3253b5e3dc8.jpg",
+    "static/media/graph.JPG": "/kevin-website/static/media/graph.3fbaffd0613c3accd391.JPG",
     "static/media/Notepad.jpg": "/kevin-website/static/media/Notepad.6604e74c410eb31d2d63.jpg",
     "static/media/Minesweeper.jpg": "/kevin-website/static/media/Minesweeper.433289997f7925361351.jpg",
-    "static/media/Resume.pdf": "/kevin-website/static/media/Resume.d4ca7e46008b5c74a9af.pdf",
+    "static/media/Resume.pdf": "/kevin-website/static/media/Resume.4945d71b9a09ef506437.pdf",
     "static/media/SQL.png": "/kevin-website/static/media/SQL.f7c62aeb4b3c3b32f7ce.png",
     "static/media/Java.png": "/kevin-website/static/media/Java.66d5a4fef00821dfe115.png",
     "static/media/React.png": "/kevin-website/static/media/React.d313c6957a69d3a50dcc.png",
@@ -19,12 +20,12 @@
     "static/media/C++.png": "/kevin-website/static/media/C++.54a44f3163f568ef0548.png",
     "static/media/Python.png": "/kevin-website/static/media/Python.e5e9ffd269e8fd17e5e7.png",
     "index.html": "/kevin-website/index.html",
-    "main.dce7e6dc.css.map": "/kevin-website/static/css/main.dce7e6dc.css.map",
-    "main.a0e219a0.js.map": "/kevin-website/static/js/main.a0e219a0.js.map",
+    "main.633863fb.css.map": "/kevin-website/static/css/main.633863fb.css.map",
+    "main.637eb851.js.map": "/kevin-website/static/js/main.637eb851.js.map",
     "496.eb711711.chunk.js.map": "/kevin-website/static/js/496.eb711711.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.dce7e6dc.css",
-    "static/js/main.a0e219a0.js"
+    "static/css/main.633863fb.css",
+    "static/js/main.637eb851.js"
   ]
 }
