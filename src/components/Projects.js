@@ -53,6 +53,18 @@ export default function Projects() {
         <h1 style={{paddingBottom: '20px'}}>{projectsText.TITLE}</h1>
 
         <Carousel variant="dark" height={700} style={{width: '100%'}}>
+
+          <Carousel.Item interval={8000}>
+            <img src={notepad} style={{maxWidth: '100%'}} alt={''}/>
+            <Carousel.Caption style={styles.carouselCaptionStyle}>
+              <h2 data-testid={'notepad'}>{projectsText.PROJECT_TWO}</h2>
+              <MediaQuery minWidth={769}>
+                <p>{projectsText.DESCRIPTION_TWO[0]}</p>
+                <p>{projectsText.DESCRIPTION_TWO[1]}<a href={projectsText.NOTEPAD_LINK}>here</a></p>
+              </MediaQuery>
+            </Carousel.Caption>
+          </Carousel.Item>
+
           <Carousel.Item interval={8000}>
             <img src={minesweeper} style={{maxWidth: '100%'}} alt={''}/>
             <Carousel.Caption style={styles.carouselCaptionStyle}>
@@ -74,17 +86,6 @@ export default function Projects() {
             </Carousel.Caption>
           </Carousel.Item>
 
-          <Carousel.Item interval={8000}>
-            <img src={notepad} style={{maxWidth: '100%'}} alt={''}/>
-            <Carousel.Caption style={styles.carouselCaptionStyle}>
-              <h2 data-testid={'notepad'}>{projectsText.PROJECT_TWO}</h2>
-              <MediaQuery minWidth={769}>
-                {projectsText.DESCRIPTION_TWO.map((item, index) => (
-                  <p key={index}>{item}</p>
-                ))}
-              </MediaQuery>
-            </Carousel.Caption>
-          </Carousel.Item>
         </Carousel>
       </div>
     </div>
