@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/kevin-website/static/css/main.633863fb.css",
-    "main.js": "/kevin-website/static/js/main.5b19f999.js",
+    "main.js": "/kevin-website/static/js/main.73d8df66.js",
     "static/js/496.eb711711.chunk.js": "/kevin-website/static/js/496.eb711711.chunk.js",
     "static/media/Contact.png": "/kevin-website/static/media/Contact.42f35a0e2d0ac5e1a007.png",
     "static/media/Education.jpg": "/kevin-website/static/media/Education.26055749edea0e559226.jpg",
@@ -21,11 +21,11 @@
     "static/media/Python.png": "/kevin-website/static/media/Python.e5e9ffd269e8fd17e5e7.png",
     "index.html": "/kevin-website/index.html",
     "main.633863fb.css.map": "/kevin-website/static/css/main.633863fb.css.map",
-    "main.5b19f999.js.map": "/kevin-website/static/js/main.5b19f999.js.map",
+    "main.73d8df66.js.map": "/kevin-website/static/js/main.73d8df66.js.map",
     "496.eb711711.chunk.js.map": "/kevin-website/static/js/496.eb711711.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.633863fb.css",
-    "static/js/main.5b19f999.js"
+    "static/js/main.73d8df66.js"
   ]
 }
