@@ -1,6 +1,6 @@
 export const JOB_TITLE = 'Teaching Assistant';
 export const COMPANY = 'Sheridan College';
-export const DURATION = 'September - December 2022';
+export const DURATION = 'Fall 2022';
 export const DESCRIPTION_ONE = `TA'd for the course
 Java (Object Oriented Programming),
 Computer Mathematics,
