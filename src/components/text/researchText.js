@@ -1,7 +1,7 @@
 export const TITLE = 'Work Experience';
-export const JOB_TITLE = 'Software Engineering Research Assistant';
+export const JOB_TITLE = 'Software Engineer';
 export const COMPANY = 'Healthcare Systems R&A Inc.';
-export const DURATION = 'May - July 2023';
+export const DURATION = 'Summer 2023';
 export const DESCRIPTION_ONE = `Contributed to a Brain-Computer Interface 
 Project for Stroke Rehabilitation using a Machine Learning model`;
 export const DESCRIPTION_TWO = `Developed a Recurrent Neural Network, along
