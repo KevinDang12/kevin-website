@@ -1,5 +1,5 @@
 export const TITLE = `Contact`;
-export const EMAIL = `dankevin@sheridancollege.ca`;
+export const EMAIL = `kevindouglasdang@gmail.com`;
 export const GITHUB = `GitHub`;
 export const LINKEDIN = `LinkedIn`;
 export const RESUME = `Resume`;
