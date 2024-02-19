@@ -4,6 +4,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Header from './components/Navbar';
 import Home from './components/Home';
 import About from './components/About';
+import Sirt from './components/Sirt';
 import Teach from './components/Teach';
 import Research from './components/Research';
 import Skills from './components/Skills';
@@ -14,6 +15,12 @@ import Contact from './components/Contact';
 const styles = {
   dividerWhite: {
     width: '100%',
+    height: '50px',
+  },
+
+  dividerBeige: {
+    width: '100%',
+    backgroundColor: '#d8d8b2',
     height: '50px',
   },
 
@@ -69,6 +76,10 @@ function App() {
 
       <div style={styles.dividerWhite}/>
 
+      <div style={styles.dividerBeige}/>
+        <Sirt/>
+      <div style={styles.dividerBeige}/>
+
       <div style={styles.dividerLightGreen}/>
 
       <section id="work">
@@ -78,7 +89,7 @@ function App() {
       <div style={styles.dividerLightGreen}/>
 
       <div style={styles.dividerLightBlue}/>
-      <Teach/>
+        <Teach/>
       <div style={styles.dividerLightBlue}/>
 
       <section id="skills">

@@ -1,18 +1,21 @@
 export const TITLE = 'Projects';
-export const PROJECT_ONE = 'Project #2: Minesweeper';
-export const DESCRIPTION_ONE = [
-  `A minesweeper game created using React and Node.js; it is hosted on AWS`,
-  `It also includes a backend server that allows users to save their 
-  minesweeper games and access it on different devices`,
-];
-export const LOCATE_MINESWEEPER = 'You can find the minesweeper web game ';
 export const LINK = 'http://www.kevindang12.com/minesweeper';
+export const NOTEPAD_WEB_LINK = "https://notepad.kevindang12.com/signin"
+export const NOTEPAD_DESKTOP_LINK = "https://github.com/KevinDang12/Desktop-Notepad"
 export const HERE = 'here';
-export const PROJECT_TWO = 'Project #1: Notepad';
-export const NOTEPAD_LINK = "https://notepad.kevindang12.com/signin"
+export const NOTEPAD_ONE = 'React Notepad App';
+export const DESCRIPTION_ONE = [
+  `The notes are cross-platform, they are synced to an Android Notepad app and a Desktop Notepad app`,
+  `The notepad web app is hosted on AWS and it can be accessed `
+];
+
+export const NOTEPAD_TWO = 'Desktop Notepad App';
 export const DESCRIPTION_TWO = [
-  `An Android notepad app for Android devices. The 
-  notepad allows you to create and store multiple notes`,
-  `The notes in this native Android app are also synced to a
-  web app `
+  `A cross-platform notepad app for Windows`,
+  `The desktop notepad app can be downloaded from this `
+];
+
+export const NOTEPAD_THREE = 'Android Notepad App';
+export const DESCRIPTION_THREE = [
+  `A cross-platform notepad app for native Android devices`,
 ];

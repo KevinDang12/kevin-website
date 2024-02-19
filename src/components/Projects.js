@@ -1,8 +1,9 @@
 import React from 'react';
 import MediaQuery from 'react-responsive';
 import Carousel from 'react-bootstrap/Carousel';
-import notepad from '../resources/Notepad.jpg';
-import minesweeper from '../resources/Minesweeper.jpg';
+import webNotepad from '../resources/Web-Notepad.JPG';
+import desktopNotepad from '../resources/Desktop-Notepad.JPG';
+import androidNotepad from '../resources/Android-Notepad.jpg';
 import * as projectsText from './text/projectsText';
 
 const styles = {
@@ -55,34 +56,35 @@ export default function Projects() {
         <Carousel variant="dark" height={700} style={{width: '100%'}}>
 
           <Carousel.Item interval={8000}>
-            <img src={notepad} style={{maxWidth: '100%'}} alt={''}/>
+            <img src={webNotepad} style={{maxWidth: '100%'}} alt={''}/>
             <Carousel.Caption style={styles.carouselCaptionStyle}>
-              <h2 data-testid={'notepad'}>{projectsText.PROJECT_TWO}</h2>
+              <h2 data-testid={'notepad'}>{projectsText.NOTEPAD_ONE}</h2>
               <MediaQuery minWidth={769}>
-                <p>{projectsText.DESCRIPTION_TWO[0]}</p>
-                <p>{projectsText.DESCRIPTION_TWO[1]}<a href={projectsText.NOTEPAD_LINK}>here</a></p>
+                <p>{projectsText.DESCRIPTION_ONE[0]}</p>
+                <p>{projectsText.DESCRIPTION_ONE[1]}<a href={projectsText.NOTEPAD_WEB_LINK}>here</a></p>
               </MediaQuery>
             </Carousel.Caption>
           </Carousel.Item>
 
           <Carousel.Item interval={8000}>
-            <img src={minesweeper} style={{maxWidth: '100%'}} alt={''}/>
+            <img src={desktopNotepad} style={{maxWidth: '100%'}} alt={''}/>
             <Carousel.Caption style={styles.carouselCaptionStyle}>
-              <h2 data-testid={'minesweeper'}>{projectsText.PROJECT_ONE}</h2>
+              <h2 data-testid={'notepad'}>{projectsText.NOTEPAD_TWO}</h2>
               <MediaQuery minWidth={769}>
-                {projectsText.DESCRIPTION_ONE.map((item, index) => (
-                  <p key={index}>{item}</p>
-                ))}
+                <p>{projectsText.DESCRIPTION_TWO[0]}</p>
+                <p>{projectsText.DESCRIPTION_TWO[1]}<a href={projectsText.NOTEPAD_DESKTOP_LINK}>repository</a></p>
               </MediaQuery>
-              <p>
-                {projectsText.LOCATE_MINESWEEPER}<a
-                  data-testid={'minesweeperlink'}
-                  href={projectsText.LINK}
-                  target="_blank"
-                  rel="noreferrer">
-                  {projectsText.HERE}
-                </a>
-              </p>
+            </Carousel.Caption>
+          </Carousel.Item>
+
+          <Carousel.Item interval={8000}>
+            <img src={androidNotepad} style={{maxWidth: '100%'}} alt={''}/>
+            <Carousel.Caption style={styles.carouselCaptionStyle}>
+              <h2 data-testid={'notepad'}>{projectsText.NOTEPAD_THREE}</h2>
+              <MediaQuery minWidth={769}>
+                <p>{projectsText.DESCRIPTION_THREE[0]}</p>
+                <p>{projectsText.DESCRIPTION_THREE[1]}</p>
+              </MediaQuery>
             </Carousel.Caption>
           </Carousel.Item>
 
