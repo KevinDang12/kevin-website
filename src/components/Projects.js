@@ -30,7 +30,7 @@ const styles = {
     alignItems: 'center',
     justifyContent: 'center',
     color: 'black',
-    backgroundColor: '#cdcdcd',
+    backgroundColor: '#f3abab',
     zIndex: 1,
     width: '100%',
     maxWidth: '100%',
@@ -83,7 +83,7 @@ export default function Projects() {
               <h2 data-testid={'notepad'}>{projectsText.NOTEPAD_THREE}</h2>
               <MediaQuery minWidth={769}>
                 <p>{projectsText.DESCRIPTION_THREE[0]}</p>
-                <p>{projectsText.DESCRIPTION_THREE[1]}</p>
+                <p>{projectsText.DESCRIPTION_THREE[1]}<a href={projectsText.NOTEPAD_ANDROID_LINK}>here</a></p>
               </MediaQuery>
             </Carousel.Caption>
           </Carousel.Item>

@@ -1,7 +1,8 @@
 export const TITLE = 'Projects';
 export const LINK = 'http://www.kevindang12.com/minesweeper';
 export const NOTEPAD_WEB_LINK = "https://notepad.kevindang12.com/signin"
-export const NOTEPAD_DESKTOP_LINK = "https://github.com/KevinDang12/Desktop-Notepad"
+export const NOTEPAD_DESKTOP_LINK = "https://github.com/KevinDang12/Desktop-Notepad";
+export const NOTEPAD_ANDROID_LINK = "https://youtube.com/shorts/YoSnYonojhg";
 export const HERE = 'here';
 export const NOTEPAD_ONE = 'React Notepad App';
 export const DESCRIPTION_ONE = [
@@ -18,4 +19,5 @@ export const DESCRIPTION_TWO = [
 export const NOTEPAD_THREE = 'Android Notepad App';
 export const DESCRIPTION_THREE = [
   `A cross-platform notepad app for native Android devices`,
+  `A video demonstration of the Android Notepad app can be found `,
 ];
