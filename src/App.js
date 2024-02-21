@@ -30,9 +30,9 @@ const styles = {
     height: '50px',
   },
 
-  dividerGray: {
+  dividerRed: {
     width: '100%',
-    backgroundColor: '#cdcdcd',
+    backgroundColor: '#f3abab',
     height: '100px',
   },
 
@@ -97,12 +97,12 @@ function App() {
       </section>
 
       <section id="projects">
-        <div style={styles.dividerGray}/>
+        <div style={styles.dividerRed}/>
       </section>
 
       <Projects/>
 
-      <div style={styles.dividerGray}/>
+      <div style={styles.dividerRed}/>
 
       <div style={styles.dividerBlue}/>
 
