@@ -1,6 +1,6 @@
 export const TITLE = 'Projects';
 export const LINK = 'http://www.kevindang12.com/minesweeper';
-export const NOTEPAD_WEB_LINK = "https://notepad.kevindang12.com/signin"
+export const NOTEPAD_WEB_LINK = "http://notepad.kevindang12.com/signin"
 export const NOTEPAD_DESKTOP_LINK = "https://github.com/KevinDang12/Desktop-Notepad";
 export const NOTEPAD_ANDROID_LINK = "https://youtube.com/shorts/YoSnYonojhg";
 export const HERE = 'here';
