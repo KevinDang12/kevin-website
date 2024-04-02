@@ -56,7 +56,6 @@ export default function Work() {
     <div>
       <MediaQuery minWidth={909}>
         <div style={styles.researchSection}>
-          <h1 data-testid="workHeader">{researchText.TITLE}</h1>
           <h2>{researchText.JOB_TITLE}</h2>
           <h2>{researchText.COMPANY}</h2>
           <h2>{researchText.DURATION}</h2>
@@ -74,7 +73,6 @@ export default function Work() {
 
       <MediaQuery maxWidth={908}>
         <div style={styles.researchSectionSmall}>
-          <h1 data-testid="workHeader">{researchText.TITLE}</h1>
           <h2>{researchText.JOB_TITLE}</h2>
           <h2>{researchText.COMPANY}</h2>
           <h2>{researchText.DURATION}</h2>

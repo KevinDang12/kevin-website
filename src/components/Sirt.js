@@ -56,6 +56,7 @@ export default function Teach() {
     <div>
       <MediaQuery minWidth={769}>
         <div style={styles.sirtSection}>
+          <h1 data-testid="workHeader">{sirtText.TITLE}</h1>
           <h2>{sirtText.JOB_TITLE}</h2>
           <h2>{sirtText.COMPANY}</h2>
           <h2>{sirtText.DURATION}</h2>
@@ -72,6 +73,7 @@ export default function Teach() {
 
       <MediaQuery maxWidth={768}>
         <div style={styles.sirtSectionSmall}>
+          <h1 data-testid="workHeader">{sirtText.TITLE}</h1>
           <h2>{sirtText.JOB_TITLE}</h2>
           <h2>{sirtText.COMPANY}</h2>
           <h2>{sirtText.DURATION}</h2>

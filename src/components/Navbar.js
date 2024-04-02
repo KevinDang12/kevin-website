@@ -50,7 +50,7 @@ export default function Navbar() {
 
       <MediaQuery maxWidth={768}>
         <div className="mobile-menu header-mobile">
-          <button onClick={toggleMenu}>
+          <button className="mobile-button" onClick={toggleMenu}>
             ☰
           </button>
           <ul className={`menu-items ${showMenu ? 'show' : ''}`}>

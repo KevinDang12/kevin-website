@@ -1,4 +1,3 @@
-export const TITLE = 'Work Experience';
 export const JOB_TITLE = 'Software Engineer';
 export const COMPANY = 'Healthcare Systems R&A Inc.';
 export const DURATION = 'Summer 2023';
