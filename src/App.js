@@ -11,6 +11,7 @@ import Skills from './components/Skills';
 import Projects from './components/Projects';
 import Education from './components/Education';
 import Contact from './components/Contact';
+import Chatbot from './components/chatbot/Chatbot';
 
 const styles = {
   dividerWhite: {
@@ -117,6 +118,8 @@ function App() {
       <section id="contact">
         <Contact/>
       </section>
+
+      <Chatbot />
     </div>
   );
 }
